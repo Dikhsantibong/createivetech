@@ -61,7 +61,7 @@
           </div>
 
           <div class="col-lg-6 content">
-            <h2>Creative Tech</h2>
+            <h2>Creative Tec</h2>
             <h3>Kami adalah perusahaan yang bergerak di bidang teknologi informasi (IT) dengan fokus utama pada pengembangan solusi digital inovatif untuk berbagai industri. Kami menyediakan berbagai layanan, termasuk pengembangan perangkat lunak kustom, aplikasi mobile.</h3>
           </div>
         </div>
