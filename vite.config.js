@@ -4,7 +4,7 @@ import laravel from "laravel-vite-plugin";
 export default defineConfig({
   plugins: [
     laravel({
-      input: ["resources/css/main.css", "resources/js/app.js"],
+      input: ["resources/css/main.css"],
       refresh: true,
     }),
   ],
@@ -15,6 +15,11 @@ export default defineConfig({
       output: {
         manualChunks: undefined,
       },
+    },
+  },
+  server: {
+    hmr: {
+      host: "localhost",
     },
   },
 });

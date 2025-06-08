@@ -3,11 +3,5 @@
     "file": "assets/main-BqbmqPj5.css",
     "src": "resources/css/main.css",
     "isEntry": true
-  },
-  "resources/js/app.js": {
-    "file": "assets/app-C1-XIpUa.js",
-    "name": "app",
-    "src": "resources/js/app.js",
-    "isEntry": true
   }
 }
