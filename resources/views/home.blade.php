@@ -633,95 +633,13 @@
 
           
 
-          <!-- Marketing Portfolio Items -->
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-            <div class="card portfolio-card h-100 border-0 shadow-sm">
-              <div class="portfolio-img">
-                <img src="{{ asset('assets/img/portfolio/marketing-1.jpg') }}" class="card-img-top" alt="Social Media Campaign">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-1">Social Media Campaign</h5>
-                <p class="card-text text-muted small">Kampanye marketing di media sosial</p>
-                <div class="portfolio-links mt-3">
-                  <a href="{{ asset('assets/img/portfolio/marketing-1.jpg') }}" 
-                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
-                     data-title="Social Media Campaign"
-                     data-description="Kampanye pemasaran digital yang komprehensif di berbagai platform media sosial. Menghasilkan peningkatan engagement dan konversi yang signifikan."
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i> Preview
-                  </a>
-                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                    <i class="bi bi-link-45deg"></i> Details
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-            <div class="card portfolio-card h-100 border-0 shadow-sm">
-              <div class="portfolio-img">
-                <img src="{{ asset('assets/img/portfolio/marketing-2.jpg') }}" class="card-img-top" alt="Digital Ads">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-1">Digital Ads</h5>
-                <p class="card-text text-muted small">Kampanye iklan digital</p>
-                <div class="portfolio-links mt-3">
-                  <a href="{{ asset('assets/img/portfolio/marketing-2.jpg') }}" 
-                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
-                     data-title="Digital Ads"
-                     data-description="Kampanye iklan digital yang efektif dengan targeting yang tepat. Mencakup Google Ads, Facebook Ads, dan platform iklan digital lainnya."
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i> Preview
-                  </a>
-                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                    <i class="bi bi-link-45deg"></i> Details
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
 
-          <!-- Design Portfolio Items -->
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
-            <div class="card portfolio-card h-100 border-0 shadow-sm">
-              <div class="portfolio-img">
-                <img src="{{ asset('assets/img/portfolio/design-1.jpg') }}" class="card-img-top" alt="Brand Identity">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-1">Brand Identity</h5>
-                <p class="card-text text-muted small">Desain identitas brand</p>
-                <div class="portfolio-links mt-3">
-                  <a href="{{ asset('assets/img/portfolio/design-1.jpg') }}" class="btn btn-sm btn-outline-primary me-2" data-gallery="portfolio-gallery-design" title="Brand Identity">
-                    <i class="bi bi-zoom-in"></i> Preview
-                  </a>
-                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                    <i class="bi bi-link-45deg"></i> Details
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
-            <div class="card portfolio-card h-100 border-0 shadow-sm">
-              <div class="portfolio-img">
-                <img src="{{ asset('assets/img/portfolio/design-2.jpg') }}" class="card-img-top" alt="Marketing Materials">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-1">Marketing Materials</h5>
-                <p class="card-text text-muted small">Desain material marketing</p>
-                <div class="portfolio-links mt-3">
-                  <a href="{{ asset('assets/img/portfolio/design-2.jpg') }}" class="btn btn-sm btn-outline-primary me-2" data-gallery="portfolio-gallery-design" title="Marketing Materials">
-                    <i class="bi bi-zoom-in"></i> Preview
-                  </a>
-                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                    <i class="bi bi-link-45deg"></i> Details
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
         </div>
