@@ -877,7 +877,7 @@
               </div>
               <div class="member-info">
                 <h4>Dikhsan Dwirangga Tibong</h4>
-                <span>Chief Executive Officer</span>
+                <span>CEO/Founder</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -895,7 +895,7 @@
               </div>
               <div class="member-info">
                 <h4>Febri Nusa Bakti</h4>
-                <span>Creative Director</span>
+                <span>Creative Lead</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -912,8 +912,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Dimas Pratama</h4>
-                <span>Technical Lead</span>
+                <h4>Diky Ardikawiratama</h4>
+                <span>Tech Lead</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -930,8 +930,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Siti Rahma</h4>
-                <span>Marketing Manager</span>
+                <h4>Chalifahdien Hamud</h4>
+                <span>General Manager</span>
               </div>
             </div>
           </div><!-- End Team Member -->
