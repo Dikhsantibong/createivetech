@@ -115,7 +115,7 @@
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-8 col-lg-10">
             <h2>CreativeTech Agency<span>.</span></h2>
-            <p>Solusi Inovatif dalam Teknologi dan Kreativitas</p>
+            <p>Multimedia & Software Development</p>
           </div>
         </div>
 
