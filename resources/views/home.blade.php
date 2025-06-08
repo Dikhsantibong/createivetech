@@ -83,7 +83,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Harga</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Pricing</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{ route('pricing.web-apps') }}">Web & Mobile Apps</a></li>
               <li><a href="{{ route('pricing.animation') }}">Animasi 2D/3D</a></li>
