@@ -6,12 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
   <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="google-site-verification=qhNRxL1_C6wiJV69zzODux_ph4AbjeIx160noXlp6RA">
+  <meta name="google-site-verification" content="qhNRxL1_C6wiJV69zzODux_ph4AbjeIx160noXlp6RA">
   
   <!-- Primary Meta Tags -->
-  <title>CreativeTech Agency - Solusi Digit
-    
-  </title>
+  <title>CreativeTech Agency - Solusi Digital Kreatif Terpercaya</title>
   <meta name="title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
   <meta name="description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
   <meta name="keywords" content="creative agency kendari, digital agency sulawesi tenggara, jasa website kendari, digital marketing kendari, desain grafis kendari, creative tech">
