@@ -19,7 +19,7 @@
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapsePortfolio" data-bs-parent="#accordionSidenav">
-                        <nav class="sidenav-menu-nested nav">
+                                <nav class="sidenav-menu-nested nav">
                             <a class="nav-link" href="#">Web & Apps</a>
                             <a class="nav-link" href="#">Animasi 2D/3D</a>
                             <a class="nav-link" href="#">Video Editing</a>
@@ -35,7 +35,7 @@
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapsePricing" data-bs-parent="#accordionSidenav">
-                        <nav class="sidenav-menu-nested nav">
+                                <nav class="sidenav-menu-nested nav">
                             <a class="nav-link" href="#">Web & Apps</a>
                             <a class="nav-link" href="#">Animasi 2D/3D</a>
                             <a class="nav-link" href="#">Video Editing</a>
