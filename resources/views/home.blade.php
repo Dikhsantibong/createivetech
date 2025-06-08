@@ -524,6 +524,30 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/web-4.png') }}" class="card-img-top" alt="Company Profile">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Aplikasi Absensi</h5>
+                <p class="card-text text-muted small">Apliasi Mobile Untuk Monitoring Kehadiran dan Pengajuan Cuti Biro SDM Polda Sultra</p>
+                <div class="portfolio-links mt-3"> 
+                  <a href="{{ asset('assets/img/portfolio/web-4.png') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="Company Profile"
+                     data-description="Website profil perusahaan responsif dengan desain modern dan profesional. Menampilkan informasi perusahaan secara lengkap dan menarik."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Animation Portfolio Items -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
             <div class="card portfolio-card h-100 border-0 shadow-sm">
