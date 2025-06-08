@@ -1,11 +1,2 @@
 User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://ctechagency.io/sitemap.xml
-
-# Disallow specific folders
-Disallow: /admin/
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /assets/vendor/
+Disallow:

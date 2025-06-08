@@ -24,61 +24,24 @@
     </div>
 
     <div class="row gy-4 justify-content-center">
-      
-      <!-- Basic Animation Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="pricing-card text-center">
-          <h3>Basic Animation</h3>
-          <div class="price">Rp 3.500.000</div>
-          <p>Paket animasi dasar untuk konten sederhana</p>
+      @foreach($packages as $index => $package)
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}">
+        <div class="pricing-card text-center {{ $package['is_popular'] ? 'popular' : '' }}">
+          @if($package['is_popular'])
+            <div class="popular-badge">Popular</div>
+          @endif
+          <h3>{{ $package['title'] }}</h3>
+          <div class="price">Rp {{ $package['price'] }}</div>
+          <p>Durasi: {{ $package['duration'] }}</p>
           <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Animasi 2D (30 detik)</li>
-            <li><i class="bi bi-check-circle"></i> 2x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Background Music</li>
-            <li><i class="bi bi-check-circle"></i> Basic Motion Graphics</li>
-            <li><i class="bi bi-check-circle"></i> Format MP4 HD</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 7 Hari</li>
+            @foreach($package['features'] as $feature)
+              <li><i class="bi bi-check-circle"></i> {{ $feature }}</li>
+            @endforeach
           </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Basic%20Animation" class="btn-pricing">Pilih Paket</a>
+          <a href="{{ $package['button_link'] }}" class="btn-pricing">{{ $package['button_text'] }}</a>
         </div>
       </div>
-
-      <!-- Professional Animation Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="pricing-card text-center">
-          <h3>Professional Animation</h3>
-          <div class="price">Rp 7.500.000</div>
-          <p>Animasi profesional untuk konten marketing</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Animasi 2D/3D (60 detik)</li>
-            <li><i class="bi bi-check-circle"></i> 4x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Custom Sound Design</li>
-            <li><i class="bi bi-check-circle"></i> Character Animation</li>
-            <li><i class="bi bi-check-circle"></i> Voice Over Profesional</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 14 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Professional%20Animation" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
-      <!-- Premium Animation Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="pricing-card text-center">
-          <h3>Premium Animation</h3>
-          <div class="price">Rp 15.000.000</div>
-          <p>Solusi animasi premium untuk proyek besar</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Animasi 3D Full HD (120 detik)</li>
-            <li><i class="bi bi-check-circle"></i> Unlimited Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Custom Character Design</li>
-            <li><i class="bi bi-check-circle"></i> Advanced Visual Effects</li>
-            <li><i class="bi bi-check-circle"></i> Multiple Format Output</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 30 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Premium%20Animation" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
+      @endforeach
     </div>
 
     <!-- Additional Info -->

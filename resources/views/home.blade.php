@@ -5,35 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="qhNRxL1_C6wiJV69zzODux_ph4AbjeIx160noXlp6RA">
-  
-  <!-- Primary Meta Tags -->
-  <title>CreativeTech Agency - Solusi Digital Kreatif Terpercaya</title>
-  <meta name="title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
-  <meta name="description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
-  <meta name="keywords" content="creative agency kendari, digital agency sulawesi tenggara, jasa website kendari, digital marketing kendari, desain grafis kendari, creative tech">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ url('/') }}">
-  <meta property="og:title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
-  <meta property="og:description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
-  <meta property="og:image" content="{{ asset('assets/img/hero-bg.jpg') }}">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ url('/') }}">
-  <meta property="twitter:title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
-  <meta property="twitter:description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
-  <meta property="twitter:image" content="{{ asset('assets/img/hero-bg.jpg') }}">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="{{ url('/') }}">
+  <x-meta-tags />
 
   <!-- Favicons -->
-   <link href="assets/img/favicon.png" rel="icon">
-   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -41,14 +17,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-   <link href="{{ asset('assets/css/main.css?v=' . time()) }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/main.css?v=' . time()) }}" rel="stylesheet">
  
 
   <!-- Custom CSS -->
@@ -139,7 +115,7 @@
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-8 col-lg-10">
             <h2>CreativeTech Agency<span>.</span></h2>
-            <p>Multimedia & Software Development</p>
+            <p>Solusi Inovatif dalam Teknologi dan Kreativitas</p>
           </div>
         </div>
 
@@ -949,7 +925,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maya" class="img-fluid" alt="">
+                <img src="{{ asset('assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -958,7 +934,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Maya Sari</h4>
+                <h4>Febri Nusa Bakti</h4>
                 <span>Creative Director</span>
               </div>
             </div>

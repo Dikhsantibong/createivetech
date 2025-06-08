@@ -24,61 +24,24 @@
     </div>
 
     <div class="row gy-4 justify-content-center">
-      
-      <!-- Basic Design Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="pricing-card text-center">
-          <h3>Basic Design</h3>
-          <div class="price">Rp 1.000.000</div>
-          <p>Paket desain dasar untuk kebutuhan sederhana</p>
+      @foreach($packages as $index => $package)
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}">
+        <div class="pricing-card text-center {{ $package['is_popular'] ? 'popular' : '' }}">
+          @if($package['is_popular'])
+            <div class="popular-badge">Popular</div>
+          @endif
+          <h3>{{ $package['title'] }}</h3>
+          <div class="price">Rp {{ $package['price'] }}</div>
+          <p>Durasi: {{ $package['duration'] }}</p>
           <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Logo Design (2 Konsep)</li>
-            <li><i class="bi bi-check-circle"></i> Business Card Design</li>
-            <li><i class="bi bi-check-circle"></i> 2x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Source File (AI/PSD)</li>
-            <li><i class="bi bi-check-circle"></i> Format Web & Print Ready</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 3 Hari</li>
+            @foreach($package['features'] as $feature)
+              <li><i class="bi bi-check-circle"></i> {{ $feature }}</li>
+            @endforeach
           </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Basic%20Design" class="btn-pricing">Pilih Paket</a>
+          <a href="{{ $package['button_link'] }}" class="btn-pricing">{{ $package['button_text'] }}</a>
         </div>
       </div>
-
-      <!-- Professional Design Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="pricing-card text-center">
-          <h3>Professional Design</h3>
-          <div class="price">Rp 2.500.000</div>
-          <p>Solusi desain lengkap untuk branding profesional</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Logo Design (4 Konsep)</li>
-            <li><i class="bi bi-check-circle"></i> Full Stationery Design</li>
-            <li><i class="bi bi-check-circle"></i> Social Media Kit</li>
-            <li><i class="bi bi-check-circle"></i> 4x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Brand Guidelines</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 7 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Professional%20Design" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
-      <!-- Premium Design Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="pricing-card text-center">
-          <h3>Premium Design</h3>
-          <div class="price">Rp 5.000.000</div>
-          <p>Solusi desain premium untuk branding komprehensif</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Custom Logo Design</li>
-            <li><i class="bi bi-check-circle"></i> Complete Brand Identity</li>
-            <li><i class="bi bi-check-circle"></i> Marketing Materials</li>
-            <li><i class="bi bi-check-circle"></i> Unlimited Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Full Brand Guidelines</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 14 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Premium%20Design" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
+      @endforeach
     </div>
 
     <!-- Additional Info -->

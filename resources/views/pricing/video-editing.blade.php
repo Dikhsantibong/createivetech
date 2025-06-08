@@ -24,61 +24,24 @@
     </div>
 
     <div class="row gy-4 justify-content-center">
-      
-      <!-- Basic Video Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="pricing-card text-center">
-          <h3>Basic Video</h3>
-          <div class="price">Rp 1.500.000</div>
-          <p>Paket editing dasar untuk konten sederhana</p>
+      @foreach($packages as $index => $package)
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}">
+        <div class="pricing-card text-center {{ $package['is_popular'] ? 'popular' : '' }}">
+          @if($package['is_popular'])
+            <div class="popular-badge">Popular</div>
+          @endif
+          <h3>{{ $package['title'] }}</h3>
+          <div class="price">Rp {{ $package['price'] }}</div>
+          <p>Durasi: {{ $package['duration'] }}</p>
           <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Durasi Video 3-5 Menit</li>
-            <li><i class="bi bi-check-circle"></i> 2x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Basic Color Grading</li>
-            <li><i class="bi bi-check-circle"></i> Simple Transitions</li>
-            <li><i class="bi bi-check-circle"></i> Background Music</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 3 Hari</li>
+            @foreach($package['features'] as $feature)
+              <li><i class="bi bi-check-circle"></i> {{ $feature }}</li>
+            @endforeach
           </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Basic%20Video" class="btn-pricing">Pilih Paket</a>
+          <a href="{{ $package['button_link'] }}" class="btn-pricing">{{ $package['button_text'] }}</a>
         </div>
       </div>
-
-      <!-- Professional Video Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="pricing-card text-center">
-          <h3>Professional Video</h3>
-          <div class="price">Rp 3.500.000</div>
-          <p>Video editing profesional untuk konten marketing</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Durasi Video 5-10 Menit</li>
-            <li><i class="bi bi-check-circle"></i> 4x Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Advanced Color Grading</li>
-            <li><i class="bi bi-check-circle"></i> Custom Motion Graphics</li>
-            <li><i class="bi bi-check-circle"></i> Sound Design & Music</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 7 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Professional%20Video" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
-      <!-- Premium Video Package -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="pricing-card text-center">
-          <h3>Premium Video</h3>
-          <div class="price">Rp 7.000.000</div>
-          <p>Solusi video editing premium untuk proyek besar</p>
-          <ul class="features">
-            <li><i class="bi bi-check-circle"></i> Durasi Video 10-20 Menit</li>
-            <li><i class="bi bi-check-circle"></i> Unlimited Revisi</li>
-            <li><i class="bi bi-check-circle"></i> Professional Color Grading</li>
-            <li><i class="bi bi-check-circle"></i> Advanced VFX & Graphics</li>
-            <li><i class="bi bi-check-circle"></i> Full Sound Production</li>
-            <li><i class="bi bi-check-circle"></i> Durasi Pengerjaan 14 Hari</li>
-          </ul>
-          <a href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20paket%20Premium%20Video" class="btn-pricing">Pilih Paket</a>
-        </div>
-      </div>
-
+      @endforeach
     </div>
 
     <!-- Additional Info -->
