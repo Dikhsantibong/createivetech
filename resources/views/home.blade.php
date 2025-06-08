@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="google-site-verification=qhNRxL1_C6wiJV69zzODux_ph4AbjeIx160noXlp6RA">
+  
   <!-- Primary Meta Tags -->
   <title>CreativeTech Agency - Solusi Digital Kreatif Terpercaya</title>
   <meta name="title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
