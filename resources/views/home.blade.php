@@ -12,6 +12,29 @@
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
+  <!-- Custom CSS for Team Photos -->
+  <style>
+    .team-member .member-img {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1/1;  /* This makes it square */
+    }
+    
+    .team-member .member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  /* This ensures image covers the area without distortion */
+      object-position: center;  /* Centers the image */
+    }
+
+    /* Maintain aspect ratio and cover on mobile */
+    @media (max-width: 768px) {
+      .team-member .member-img {
+        aspect-ratio: 1/1;
+      }
+    }
+  </style>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -26,7 +49,6 @@
 
   <!-- Main CSS File -->
   @vite('resources/css/main.css')
-
   <!-- =======================================================
   * gp Name: Gp
   * gp URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-gp/
@@ -44,7 +66,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">GP</h1>
+        <h1 class="sitename">Creative Tech</h1>
         <span>.</span>
       </a>
 
@@ -55,21 +77,14 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Harga</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="{{ route('pricing.web-apps') }}">Web & Mobile Apps</a></li>
+              <li><a href="{{ route('pricing.animation') }}">Animasi 2D/3D</a></li>
+              <li><a href="{{ route('pricing.video-editing') }}">Video Editing</a></li>
+              <li><a href="{{ route('pricing.digital-marketing') }}">Digital Marketing</a></li>
+              <li><a href="{{ route('pricing.graphic-design') }}">Desain Grafis</a></li>
+              <li><a href="{{ route('pricing.umkm') }}">Paket UMKM</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
@@ -77,7 +92,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      {{-- <a class="btn-getstarted" href="index.html#about">Get Started</a> --}}
 
     </div>
   </header>
@@ -87,46 +102,46 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="{{ asset('assets/img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
+      <img src="{{ asset('assets/img/hero-bg.png') }}" alt="" data-aos="fade-in">
 
       <div class="container">
 
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-6 col-lg-8">
-            <h2>Powerful Digital Solutions With GP<span>.</span></h2>
-            <p>We are team of talented digital marketers</p>
+          <div class="col-xl-8 col-lg-10">
+            <h2>CreativeTech Agency<span>.</span></h2>
+            <p>Solusi Inovatif dalam Teknologi dan Kreativitas</p>
           </div>
         </div>
 
         <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
+              <i class="bi bi-code-slash"></i>
+              <h3><a href="">Web & Mobile Apps</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
+              <i class="bi bi-camera-reels"></i>
+              <h3><a href="">Animasi 2D/3D</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Sedare Perspiciatis</a></h3>
+              <i class="bi bi-film"></i>
+              <h3><a href="">Video Editing</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="">Magni Dolores</a></h3>
+              <i class="bi bi-share"></i>
+              <h3><a href="">Digital Marketing</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="">Nemos Enimade</a></h3>
+              <i class="bi bi-palette"></i>
+              <h3><a href="">Desain Grafis</a></h3>
             </div>
           </div>
         </div>
@@ -142,23 +157,18 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/about.jpg') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident</h3>
+            <h3>Tentang Kami</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              CreativeTech Agency adalah agensi teknologi kreatif yang menyediakan layanan inovatif dalam pengembangan web dan aplikasi, manajemen media sosial, konsultasi IT, editing video profesional, animasi 2D dan 3D, serta desain grafis.
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span><strong>Visi:</strong> Menjadi mitra pilihan dalam dunia teknologi kreatif, memberikan solusi digital inovatif yang mampu bersaing di pasar global.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span><strong>Misi:</strong> Menggabungkan kreativitas dan teknologi untuk menyediakan layanan yang memenuhi kebutuhan bisnis klien.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Kami berkomitmen untuk membantu bisnis dan organisasi menciptakan solusi digital yang kreatif dan berdaya saing tinggi.</span></li>
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
           </div>
         </div>
 
@@ -228,38 +238,41 @@
       <div class="container">
 
         <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{{ asset('assets/img/features-bg.jpg') }}" alt=""></div>
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{ asset('assets/img/features-bg.jpg') }}" alt="">
+          </div>
           <div class="col-lg-6">
+            
 
             <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
+              <i class="bi bi-people flex-shrink-0"></i>
               <div>
-                <h4>Est labore ad</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                <h4>Tim Berpengalaman</h4>
+                <p>Profesional dengan pengalaman di berbagai bidang kreatif dan teknologi.</p>
               </div>
             </div><!-- End Features Item-->
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
+              <i class="bi bi-grid flex-shrink-0"></i>
               <div>
-                <h4>Harum esse qui</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <h4>Layanan Terintegrasi</h4>
+                <p>Semua solusi digital yang Anda butuhkan ada dalam satu atap.</p>
               </div>
             </div><!-- End Features Item-->
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <i class="bi bi-lightbulb flex-shrink-0"></i>
               <div>
-                <h4>Aut occaecati</h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                <h4>Inovasi Berkelanjutan</h4>
+                <p>Selalu mengikuti tren terbaru di dunia teknologi dan desain untuk menghadirkan solusi yang relevan.</p>
               </div>
             </div><!-- End Features Item-->
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <i class="bi bi-diagram-3 flex-shrink-0"></i>
               <div>
-                <h4>Beatae veritatis</h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                <h4>Proses Kerja Sistematis</h4>
+                <p>Analisis kebutuhan, pengembangan konsep, produksi dan eksekusi, serta monitoring dan evaluasi yang terstruktur.</p>
               </div>
             </div><!-- End Features Item-->
 
@@ -275,8 +288,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Check our Services</p>
+        <h2>Layanan</h2>
+        <p>Produk dan Layanan Utama</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -286,75 +299,60 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-code-square"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <h3>Pengembangan Web dan Aplikasi Mobile</h3>
+              <p>Kami menyediakan solusi pengembangan website dan aplikasi mobile yang responsif, user-friendly, dan aman untuk mendukung bisnis Anda.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-camera-video"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <h3>Animasi 2D dan 3D</h3>
+              <p>Menyajikan animasi kreatif yang menarik untuk keperluan pemasaran, edukasi, dan hiburan dengan storytelling visual yang efektif.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-film"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <h3>Editing Video Profesional</h3>
+              <p>Menggabungkan teknik sinematik dan teknologi terkini untuk menghasilkan video berkualitas tinggi yang dapat meningkatkan brand awareness.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="bi bi-share"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <h3>Manajemen Media Sosial</h3>
+              <p>Kami menawarkan strategi pemasaran digital yang meliputi SEO, SEM, kampanye media sosial, dan email marketing untuk memperluas jangkauan merek Anda.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="bi bi-palette"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <h3>Desain Grafis dan Branding</h3>
+              <p>Membantu menciptakan identitas merek yang kuat melalui desain logo, panduan branding, dan strategi komunikasi visual.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-gear"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <h3>Konsultasi IT</h3>
+              <p>Memberikan solusi konsultasi teknologi informasi yang komprehensif untuk membantu mengoptimalkan dan mengembangkan infrastruktur IT bisnis Anda.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -373,9 +371,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <h3>Wujudkan Visi Digital Anda Bersama Kami</h3>
+              <p>Kami siap membantu mengembangkan solusi digital yang inovatif dan kreatif untuk bisnis Anda. Dengan tim profesional dan pengalaman yang luas, kami berkomitmen untuk memberikan layanan terbaik yang sesuai dengan kebutuhan Anda.</p>
+              <a class="cta-btn" href="https://wa.me/6282293118410?text=Halo%20CreativeTech%2C%20saya%20tertarik%20dengan%20layanan%20yang%20ditawarkan." target="_blank">Hubungi Kami di WhatsApp</a>
             </div>
           </div>
         </div>
@@ -386,122 +384,323 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
+      <!-- Portfolio Modal -->
+      <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="portfolio-modal-content">
+                <!-- Content will be dynamically loaded here -->
+              </div>
+            </div>
+            <div class="modal-footer border-0">
+              <div class="portfolio-description p-3">
+                <!-- Description will be dynamically loaded here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Check our Portfolio</p>
+        <p>Hasil Karya Terbaik Kami</p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8">
+            <ul class="portfolio-filters d-flex justify-content-center gap-2 p-0" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active btn btn-sm btn-outline-primary">Semua</li>
+              <li data-filter="filter-web" class="btn btn-sm btn-outline-primary">Web & Apps</li>
+              <li data-filter="filter-animation" class="btn btn-sm btn-outline-primary">Animasi</li>
+              <li data-filter="filter-video" class="btn btn-sm btn-outline-primary">Video</li>
+              <li data-filter="filter-marketing" class="btn btn-sm btn-outline-primary">Marketing</li>
+              <li data-filter="filter-design" class="btn btn-sm btn-outline-primary">Design</li>
+            </ul>
+          </div>
         </div>
 
+        <div class="row g-4">
+          <!-- Web & Apps Portfolio Items -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/web-1.png') }}" class="card-img-top" alt="E-Commerce Platform">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Aplikasi Monitoring Operasi Mesin</h5>
+                <p class="card-text text-muted small">Platform terintegrasi untuk monitoring dan analisis kinerja pembangkit listrik secara real-time. </p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/web-1.png') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="E-Commerce Platform"
+                     data-description="Website toko online dengan sistem manajemen inventori yang lengkap dan mudah digunakan. Dilengkapi dengan fitur manajemen stok, pembayaran online, dan laporan penjualan."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/web-2.png') }}" class="card-img-top" alt="Company Profile">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Aplikasi Monitoring dan Daily Meeting</h5>
+                <p class="card-text text-muted small">Platform terintegrasi untuk monitoring dan Daily Meeting Untuk Meningkatkan Kinerja Perusahaan</p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/web-2.png') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="Company Profile"
+                     data-description="Website profil perusahaan responsif dengan desain modern dan profesional. Menampilkan informasi perusahaan secara lengkap dan menarik."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/web-3.png') }}" class="card-img-top" alt="Company Profile">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Aplikasi Company Profile</h5>
+                <p class="card-text text-muted small">Platform terintegrasi untuk Menampilkan Profile dan Berita Seputar Biro SDM Polda Sultra</p>
+                <div class="portfolio-links mt-3"> 
+                  <a href="{{ asset('assets/img/portfolio/web-3.png') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="Company Profile"
+                     data-description="Website profil perusahaan responsif dengan desain modern dan profesional. Menampilkan informasi perusahaan secara lengkap dan menarik."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animation Portfolio Items -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+                <div class="portfolio-img">
+                    <!-- Thumbnail dari YouTube -->
+                    <img src="https://img.youtube.com/vi/C5dziKknHTU/maxresdefault.jpg" class="card-img-top" alt="Explainer Animation">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Explainer Animation</h5>
+                    <p class="card-text text-muted small">Video animasi 2D untuk produk startup</p>
+                    <div class="portfolio-links mt-3">
+                        <a href="#" 
+                            class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video-id="C5dziKknHTU"
+                            data-title="Explainer Animation"
+                            data-description="Video animasi 2D yang menjelaskan produk startup dengan cara yang menarik dan mudah dipahami. Menggunakan teknik motion graphics modern.">
+                            <i class="bi bi-play-circle"></i> Preview
+                        </a>
+                        <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                            <i class="bi bi-link-45deg"></i> Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+                <div class="portfolio-img">
+                    <!-- Thumbnail dari YouTube -->
+                    <img src="https://img.youtube.com/vi/E7jZ6hDX6f4/maxresdefault.jpg" class="card-img-top" alt="Safety Induction Animation">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Safety Induction Animation</h5>
+                    <p class="card-text text-muted small">Animasi safety induction untuk perusahaan</p>
+                    <div class="portfolio-links mt-3">
+                        <a href="#" 
+                            class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video-id="E7jZ6hDX6f4"
+                            data-title="Safety Induction Animation"
+                            data-description="Animasi safety induction yang informatif dan menarik untuk perusahaan. Menjelaskan prosedur keselamatan dengan cara yang mudah dipahami.">
+                            <i class="bi bi-play-circle"></i> Preview
+                        </a>
+                        <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                            <i class="bi bi-link-45deg"></i> Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Video Portfolio Items -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+                <div class="portfolio-img">
+                    <!-- Thumbnail dari YouTube -->
+                    <img src="https://img.youtube.com/vi/qNZ-McWO8jc/maxresdefault.jpg" class="card-img-top" alt="Safety Induction Video">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Safety Induction Animation</h5>
+                    <p class="card-text text-muted small">Video safety induction untuk perusahaan</p>
+                    <div class="portfolio-links mt-3">
+                        <a href="#" 
+                            class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video-id="qNZ-McWO8jc"
+                            data-title="Safety Induction Video"
+                            data-description="Video safety induction yang informatif dan menarik untuk perusahaan. Menjelaskan prosedur keselamatan dengan cara yang mudah dipahami.">
+                            <i class="bi bi-play-circle"></i> Preview
+                        </a>
+                        <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                            <i class="bi bi-link-45deg"></i> Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Marketing Portfolio Items -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/marketing-1.jpg') }}" class="card-img-top" alt="Social Media Campaign">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Social Media Campaign</h5>
+                <p class="card-text text-muted small">Kampanye marketing di media sosial</p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/marketing-1.jpg') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="Social Media Campaign"
+                     data-description="Kampanye pemasaran digital yang komprehensif di berbagai platform media sosial. Menghasilkan peningkatan engagement dan konversi yang signifikan."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/marketing-2.jpg') }}" class="card-img-top" alt="Digital Ads">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Digital Ads</h5>
+                <p class="card-text text-muted small">Kampanye iklan digital</p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/marketing-2.jpg') }}" 
+                     class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                     data-title="Digital Ads"
+                     data-description="Kampanye iklan digital yang efektif dengan targeting yang tepat. Mencakup Google Ads, Facebook Ads, dan platform iklan digital lainnya."
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Portfolio Items -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/design-1.jpg') }}" class="card-img-top" alt="Brand Identity">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Brand Identity</h5>
+                <p class="card-text text-muted small">Desain identitas brand</p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/design-1.jpg') }}" class="btn btn-sm btn-outline-primary me-2" data-gallery="portfolio-gallery-design" title="Brand Identity">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+              <div class="portfolio-img">
+                <img src="{{ asset('assets/img/portfolio/design-2.jpg') }}" class="card-img-top" alt="Marketing Materials">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Marketing Materials</h5>
+                <p class="card-text text-muted small">Desain material marketing</p>
+                <div class="portfolio-links mt-3">
+                  <a href="{{ asset('assets/img/portfolio/design-2.jpg') }}" class="btn btn-sm btn-outline-primary me-2" data-gallery="portfolio-gallery-design" title="Marketing Materials">
+                    <i class="bi bi-zoom-in"></i> Preview
+                  </a>
+                  <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                    <i class="bi bi-link-45deg"></i> Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      <!-- Portfolio Modal -->
+      <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="portfolio-modal-content">
+                <!-- Content will be dynamically loaded here -->
+              </div>
+            </div>
+            <div class="modal-footer border-0">
+              <div class="portfolio-description p-3">
+                <!-- Description will be dynamically loaded here -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section><!-- End Portfolio Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
@@ -511,14 +710,14 @@
         <div class="row gy-4 align-items-center justify-content-between">
 
           <div class="col-lg-5">
-            <img src="{{ asset('assets/img/stats-img.jpg') }}" alt="" class="img-fluid">
+            <img src="{{ asset('assets/img/stats.jpg') }}" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
 
-            <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+            <h3 class="fw-bold fs-2 mb-3">Pencapaian dan Pengalaman Kami</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Dengan pengalaman bertahun-tahun dalam industri teknologi kreatif, kami telah membantu ratusan klien mengembangkan solusi digital yang inovatif dan efektif untuk bisnis mereka.
             </p>
 
             <div class="row gy-4">
@@ -527,8 +726,8 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Klien Puas</strong> <span>yang telah kami layani</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -537,28 +736,28 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Proyek Selesai</strong> <span>dalam berbagai kategori</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
+                  <i class="bi bi-clock-history flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Tahun Pengalaman</strong> <span>melayani berbagai industri</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
-                  <i class="bi bi-people flex-shrink-0"></i>
+                  <i class="bi bi-award flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Penghargaan</strong> <span>di bidang kreatif & teknologi</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -601,14 +800,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Ahmad Rizki</h3>
+                <h4>CEO - Tech Startup</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <span>CreativeTech Agency telah membantu kami mengembangkan platform digital yang luar biasa. Tim mereka sangat profesional dan memahami kebutuhan bisnis kami dengan baik.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -617,14 +816,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Sarah Putri</h3>
+                <h4>Marketing Manager</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Strategi digital marketing yang dirancang oleh CreativeTech berhasil meningkatkan engagement dan konversi brand kami secara signifikan.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -633,14 +832,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Budi Santoso</h3>
+                <h4>Pemilik UKM</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>Website dan sistem manajemen yang dikembangkan sangat membantu operasional bisnis kami. Pelayanan yang ramah dan responsif.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -649,14 +848,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Diana Wijaya</h3>
+                <h4>Content Creator</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>Kualitas video dan animasi yang dihasilkan sangat profesional. Tim kreatif mereka berhasil menerjemahkan ide-ide kami menjadi konten yang menarik.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -665,14 +864,14 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Rudi Hartono</h3>
+                <h4>Direktur Perusahaan</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <span>Solusi IT yang diberikan CreativeTech sangat komprehensif dan sesuai dengan kebutuhan perusahaan kami. Mereka tidak hanya memberikan produk, tapi juga konsultasi yang berharga.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -691,8 +890,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>our Team</p>
+        <h2>Tim Kami</h2>
+        <p>Profesional Berpengalaman</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -711,7 +910,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Dikhsan Dwirangga Tibong</h4>
                 <span>Chief Executive Officer</span>
               </div>
             </div>
@@ -725,12 +924,12 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/dikhsan-dwirangga-tibong-276a88300/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Maya Sari</h4>
+                <span>Creative Director</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -747,8 +946,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Dimas Pratama</h4>
+                <span>Technical Lead</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -765,8 +964,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Siti Rahma</h4>
+                <span>Marketing Manager</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -789,7 +988,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.85579094164!2d122.43624985595072!3d-3.9984923685386584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde0b7e6a05%3A0x168d0c5d8469c659!2sKota%20Kendari%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1709799171599!5m2!1sid!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -799,7 +998,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Jl. Bunggasi, Kota Kendari, Sulawesi Tenggara</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -807,7 +1006,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+62 822 9311 8410</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -868,7 +1067,7 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">GP</span>
+              <span class="sitename">CreativeTech</span>
             </a>
             <div class="footer-contact pt-3">
               <p>Jalan Bunggasi</p>
@@ -885,35 +1084,35 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Menu Utama</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Beranda</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">Tentang Kami</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Layanan</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Kontak</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Layanan Kami</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Animasi 2D/3D</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Video Editing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Digital Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Desain Grafis</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <h4>Newsletter</h4>
+            <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang layanan dan promo menarik.</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="sent-message">Terima kasih telah berlangganan newsletter kami!</div>
             </form>
           </div>
 
@@ -923,14 +1122,7 @@
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-        </div>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">CreativeTech Agency</strong> <span>All Rights Reserved</span></p>
       </div>
     </div>
 
@@ -956,6 +1148,428 @@
   <!-- Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
 
-</body>
+  <!-- Portfolio Modal Script -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Isotope for filtering
+    let portfolioIsotope = document.querySelector('.row.g-4');
+    if (portfolioIsotope) {
+      // Wait for images to load
+      imagesLoaded(portfolioIsotope, function() {
+        let iso = new Isotope(portfolioIsotope, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'fitRows',
+          transitionDuration: '0.4s'
+        });
 
+        document.querySelectorAll('.portfolio-filters li').forEach(function(filter) {
+          filter.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            document.querySelector('.portfolio-filters .filter-active').classList.remove('filter-active');
+            this.classList.add('filter-active');
+            
+            iso.arrange({
+              filter: this.getAttribute('data-filter') === '*' ? '*' : '.' + this.getAttribute('data-filter')
+            });
+          });
+        });
+      });
+    }
+
+    // Handle both video and image previews
+    document.querySelectorAll('.portfolio-preview-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const title = this.getAttribute('data-title');
+        const description = this.getAttribute('data-description');
+        const videoId = this.getAttribute('data-video-id');
+        
+        // Get the portfolio item's parent to check if it's an animation
+        const portfolioItem = this.closest('.portfolio-item');
+        const isAnimation = portfolioItem.classList.contains('filter-animation');
+
+        if (isAnimation && videoId) {
+          // Show video modal for animation items
+          const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+          const modalTitle = document.querySelector('#videoModal .modal-title');
+          const modalContent = document.querySelector('#videoModal .modal-body');
+          const modalDescription = document.querySelector('#videoModal .portfolio-description');
+
+          modalTitle.textContent = title;
+          modalContent.innerHTML = `
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+                      title="YouTube video" 
+                      allowfullscreen 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+              </iframe>
+            </div>
+          `;
+          modalDescription.innerHTML = `
+            <h6 class="mb-2">${title}</h6>
+            <p class="text-muted mb-0">${description}</p>
+          `;
+
+          videoModal.show();
+
+          // Clean up video when modal is hidden
+          document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+            modalContent.innerHTML = '';
+          });
+        } else {
+          // Show image modal for non-animation items
+          const portfolioModal = new bootstrap.Modal(document.getElementById('portfolioModal'));
+          const modalTitle = document.querySelector('.portfolio-modal .modal-title');
+          const modalContent = document.querySelector('.portfolio-modal-content');
+          const modalDescription = document.querySelector('.portfolio-modal .portfolio-description');
+          const src = this.getAttribute('href');
+
+          modalTitle.textContent = title;
+          modalContent.innerHTML = `<img src="${src}" class="img-fluid portfolio-preview" alt="${title}">`;
+          modalDescription.innerHTML = `
+            <h6 class="mb-2">${title}</h6>
+            <p class="text-muted mb-0">${description}</p>
+          `;
+
+          portfolioModal.show();
+        }
+      });
+    });
+  });
+  </script>
+
+  <!-- Portfolio Modal Styles -->
+  <style>
+  .portfolio-modal .modal-dialog {
+    max-width: 800px;
+  }
+
+  .portfolio-modal .modal-content {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .portfolio-modal .modal-header {
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+  }
+
+  .portfolio-modal .modal-title {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .portfolio-modal .portfolio-preview {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .portfolio-modal .portfolio-description {
+    width: 100%;
+    background: #f8f9fa;
+    padding: 1.5rem;
+  }
+
+  .portfolio-modal .btn-close {
+    background-color: var(--primary-color);
+    opacity: 1;
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 50%;
+  }
+
+  .portfolio-modal .btn-close:hover {
+    opacity: 0.8;
+  }
+
+  .portfolio-modal .ratio {
+    background: #000;
+  }
+
+  .portfolio-modal video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  </style>
+
+  <!-- Add this CSS to ensure uniform card sizes -->
+  <style>
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+
+  .portfolio .portfolio-content {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Fixed height for all cards */
+  }
+
+  .portfolio .portfolio-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures images cover the area without distortion */
+  }
+
+  .portfolio .portfolio-info {
+    background: rgba(var(--color-secondary-rgb), 0.9);
+    padding: 30px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio .portfolio-content:hover .portfolio-info {
+    opacity: 1;
+  }
+
+  .portfolio .portfolio-info h4 {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .portfolio .portfolio-info p {
+    color: rgba(var(--color-white-rgb), 0.8);
+    margin-bottom: 20px;
+  }
+
+  .portfolio .portfolio-info .preview-link,
+  .portfolio .portfolio-info .details-link {
+    color: rgba(var(--color-white-rgb), 0.8);
+    font-size: 24px;
+    margin: 0 8px;
+  }
+
+  .portfolio .portfolio-info .preview-link:hover,
+  .portfolio .portfolio-info .details-link:hover {
+    color: var(--color-white);
+  }
+  </style>
+
+  <!-- Portfolio Styles -->
+  <style>
+  /* Portfolio Styles */
+  .portfolio-filters {
+    list-style: none;
+  }
+
+  .portfolio-filters li {
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .portfolio-filters .filter-active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+  }
+
+  .portfolio-card {
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .portfolio-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .portfolio-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .portfolio-links a {
+    font-size: 13px;
+  }
+
+  .portfolio-links i {
+    font-size: 14px;
+  }
+
+  /* Filter animation styles */
+  .portfolio-item {
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  .portfolio-item.isotope-hidden {
+    transform: scale(0.2);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /* Filter animation styles */
+  .portfolio-item {
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  .portfolio-item.isotope-hidden {
+    transform: scale(0.2);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .portfolio-img {
+      height: 180px;
+    }
+    
+    .portfolio-filters li {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  </style>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <!-- Video content will be inserted here -->
+        </div>
+        <div class="modal-footer border-0">
+          <div class="portfolio-description p-3 w-100">
+            <!-- Description will be inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add these styles -->
+  <style>
+  #videoModal .modal-dialog {
+    max-width: 800px;
+  }
+
+  #videoModal .modal-content {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  #videoModal .modal-body {
+    background: #000;
+  }
+
+  #videoModal .ratio {
+    margin-bottom: 0;
+  }
+
+  #videoModal iframe {
+    border: none;
+  }
+
+  #videoModal .portfolio-description {
+    background: #f8f9fa;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .portfolio-preview-btn i.bi-play-circle {
+    color: #0d6efd;
+    margin-right: 4px;
+  }
+
+  /* Hover effect for animation items */
+  .filter-animation .portfolio-img::before {
+    content: '\F4F9';  /* Bootstrap Icons play circle code */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+  .filter-animation .portfolio-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .filter-animation .portfolio-img:hover::before,
+  .filter-animation .portfolio-img:hover::after {
+    opacity: 1;
+  }
+  </style>
+
+  <!-- Add this style -->
+  <style>
+  .filter-video .portfolio-img::before {
+    content: '\F4F9';  /* Bootstrap Icons play circle code */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+  .filter-video .portfolio-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .filter-video .portfolio-img:hover::before,
+  .filter-video .portfolio-img:hover::after {
+    opacity: 1;
+  }
+  </style>
+</body>
 </html>
