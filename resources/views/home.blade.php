@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ctech</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  
+  <!-- Primary Meta Tags -->
+  <title>CreativeTech Agency - Solusi Digital Kreatif Terpercaya</title>
+  <meta name="title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
+  <meta name="description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
+  <meta name="keywords" content="creative agency kendari, digital agency sulawesi tenggara, jasa website kendari, digital marketing kendari, desain grafis kendari, creative tech">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ url('/') }}">
+  <meta property="og:title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
+  <meta property="og:description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
+  <meta property="og:image" content="{{ asset('assets/img/hero-bg.jpg') }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ url('/') }}">
+  <meta property="twitter:title" content="CreativeTech Agency - Solusi Digital Kreatif Terpercaya">
+  <meta property="twitter:description" content="CreativeTech Agency adalah agensi digital kreatif di Kendari yang menyediakan layanan web development, desain grafis, digital marketing, dan solusi teknologi terpercaya untuk bisnis Anda.">
+  <meta property="twitter:image" content="{{ asset('assets/img/hero-bg.jpg') }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ url('/') }}">
 
   <!-- Favicons -->
    <link href="assets/img/favicon.png" rel="icon">
