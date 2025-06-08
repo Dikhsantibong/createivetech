@@ -158,12 +158,15 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{{ asset('assets/img/about.jpg') }}" class="img-fluid" alt="">
+          <div class="col-lg-6 order-1 order-lg-2 position-relative">
+            <div class="video-container">
+              <img src="{{ asset('assets/img/about.jpg') }}" class="img-fluid" alt="">
+              <a href="#" class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                <i class="bi bi-play-circle"></i>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
             <h3>Tentang Kami</h3>
@@ -177,9 +180,24 @@
             </ul>
           </div>
         </div>
-
       </div>
 
+      <!-- Video Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Company Profile Video</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/C5dziKknHTU" title="Company Profile" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section><!-- /About Section -->
 
     <!-- Clients Section -->
@@ -1577,5 +1595,25 @@
     opacity: 1;
   }
   </style>
+
+  <!-- Handle video modal -->
+  <script>
+  // Handle video modal
+  const videoModal = document.getElementById('videoModal');
+  const videoFrame = videoModal.querySelector('iframe');
+  
+  // Pause video when modal is closed
+  videoModal.addEventListener('hidden.bs.modal', function () {
+    const videoSrc = videoFrame.src;
+    videoFrame.src = '';
+    videoFrame.src = videoSrc;
+  });
+
+  // Play video when modal is opened
+  videoModal.addEventListener('shown.bs.modal', function () {
+    // You can add autoplay here if needed
+    // videoFrame.src += "?autoplay=1";
+  });
+  </script>
 </body>
 </html>
