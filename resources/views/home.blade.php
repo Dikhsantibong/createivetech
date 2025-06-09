@@ -874,7 +874,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                {{-- <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt=""> --}}
                 <h3>Ahmad Rizki</h3>
                 <h4>CEO - Tech Startup</h4>
                 <div class="stars">
@@ -890,7 +890,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                {{-- <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt=""> --}}
                 <h3>Sarah Putri</h3>
                 <h4>Marketing Manager</h4>
                 <div class="stars">
@@ -906,7 +906,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                {{-- <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt=""> --}}
                 <h3>Budi Santoso</h3>
                 <h4>Pemilik UKM</h4>
                 <div class="stars">
@@ -922,7 +922,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
+                {{-- <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt=""> --}}
                 <h3>Diana Wijaya</h3>
                 <h4>Content Creator</h4>
                 <div class="stars">
@@ -938,7 +938,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+                {{-- <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt=""> --}}
                 <h3>Rudi Hartono</h3>
                 <h4>Direktur Perusahaan</h4>
                 <div class="stars">
