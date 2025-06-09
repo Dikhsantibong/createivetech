@@ -24,7 +24,9 @@
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  @vite('resources/css/main.css')
+  <link href="{{ asset('assets/css/main.css?v=' . time()) }}" rel="stylesheet">
+ 
+
 
   <!-- Additional Pricing Styles -->
   <style>
