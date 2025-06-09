@@ -367,6 +367,11 @@
 
     <!-- Features Section -->
     <section id="features" class="features section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Kenapa Memilih Kami?</h2>
+          <p>Klien Puas dengan Layanan Kami</p>
+        </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -779,6 +784,7 @@
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
+      
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -849,6 +855,7 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
+      
 
       <img src="{{ asset('assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt="">
 
@@ -871,6 +878,7 @@
             }
           </script>
           <div class="swiper-wrapper">
+            
 
             <div class="swiper-slide">
               <div class="testimonial-item">
