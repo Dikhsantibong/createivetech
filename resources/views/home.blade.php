@@ -988,8 +988,8 @@
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/dikhsan_tibong?igsh=d3VkYm4xcGxkdzd4"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/dikhsan-dwirangga-tibong-276a88300/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -1007,7 +1007,7 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/dikhsan-dwirangga-tibong-276a88300/"><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
