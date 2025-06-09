@@ -107,7 +107,7 @@
           </div>
           <h5>3. Pengembangan</h5>
           <p class="mb-0">Coding dengan teknologi terkini dan best practices</p>
-        </div>g
+        </div>
       </div>
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="process-card text-center p-4 rounded shadow-sm h-100" style="background-color: #ffffff;">

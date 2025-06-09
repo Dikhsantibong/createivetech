@@ -48,6 +48,115 @@
         aspect-ratio: 1/1;
       }
     }
+
+    /* Play Button Animation Styles */
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+      animation: playButtonPulse 2s infinite;
+    }
+
+    .play-btn i {
+      font-size: 40px;
+      color: var(--primary-color);
+      transition: all 0.3s ease;
+    }
+
+    .play-btn:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+      background: #fff;
+    }
+
+    .play-btn:hover i {
+      transform: scale(1.2);
+    }
+
+    /* Cursor Animation */
+    .cursor {
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      position: absolute;
+      pointer-events: none;
+      animation: cursorMove 3s infinite;
+      z-index: 9999;
+      display: none;
+    }
+
+    /* Pulse Animation */
+    @keyframes playButtonPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
+    }
+
+    /* Cursor Movement Animation */
+    @keyframes cursorMove {
+      0% {
+        transform: translate(-50px, -50px) scale(1);
+      }
+      45% {
+        transform: translate(0, 0) scale(1);
+      }
+      50% {
+        transform: translate(0, 0) scale(0.8);
+      }
+      55% {
+        transform: translate(0, 0) scale(1);
+      }
+      100% {
+        transform: translate(-50px, -50px) scale(1);
+      }
+    }
+
+    /* Video Container Style */
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .video-container:hover::after {
+      background: rgba(0, 0, 0, 0.3);
+    }
   </style>
 
   <!-- Fonts -->
@@ -980,7 +1089,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>ctech@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -1556,6 +1665,50 @@
     // You can add autoplay here if needed
     // videoFrame.src += "?autoplay=1";
   });
+  </script>
+
+  <!-- Add this script before closing body tag -->
+  <script>
+    // Video Play Button Animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const playBtn = document.querySelector('.play-btn');
+      const cursor = document.createElement('div');
+      cursor.className = 'cursor';
+      document.body.appendChild(cursor);
+
+      // Show cursor animation every 5 seconds
+      setInterval(() => {
+        cursor.style.display = 'block';
+        
+        // Calculate play button position
+        const playBtnRect = playBtn.getBoundingClientRect();
+        const startX = playBtnRect.left + window.scrollX - 50;
+        const startY = playBtnRect.top + window.scrollY - 50;
+        const endX = playBtnRect.left + window.scrollX + (playBtnRect.width / 2) - 10;
+        const endY = playBtnRect.top + window.scrollY + (playBtnRect.height / 2) - 10;
+
+        // Animate cursor
+        cursor.style.left = `${endX}px`;
+        cursor.style.top = `${endY}px`;
+
+        // Hide cursor and trigger click animation after movement
+        setTimeout(() => {
+          cursor.style.display = 'none';
+          playBtn.style.transform = 'scale(0.9)';
+          setTimeout(() => {
+            playBtn.style.transform = 'scale(1)';
+          }, 200);
+        }, 3000);
+      }, 6000);
+
+      // Add click animation
+      playBtn.addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 200);
+      });
+    });
   </script>
 </body>
 </html>

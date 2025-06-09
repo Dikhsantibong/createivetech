@@ -1755,15 +1755,16 @@ section,
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .video-container img {
   width: 100%;
-  transition: transform 0.3s ease;
+  transition: none; /* Remove image hover animation */
 }
 
 .video-container:hover img {
-  transform: scale(1.05);
+  transform: none; /* Remove image hover animation */
 }
 
 .play-btn {
@@ -1772,6 +1773,7 @@ section,
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  cursor: pointer;
 }
 
 .play-btn i {
@@ -1780,13 +1782,13 @@ section,
   background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   padding: 10px;
-  transition: all 0.3s ease;
+  transition: none; /* Remove hover animation */
 }
 
 .play-btn:hover i {
   color: var(--primary-color);
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: none; /* Remove hover scale animation */
+  box-shadow: none; /* Remove hover shadow animation */
 }
 
 /* Modal Video Styles */
