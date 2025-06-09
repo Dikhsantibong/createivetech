@@ -1030,7 +1030,7 @@
               </div>
               <div class="member-info">
                 <h4>Diky Ardikawiratama</h4>
-                <span>Founder</span>
+                <span>Commissioner/Founder</span>
               </div>
             </div>
           </div><!-- End Team Member -->
