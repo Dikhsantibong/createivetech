@@ -24,8 +24,8 @@ class WebAppsPricingController extends Controller
                     'Free SSL Certificate'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Basic%20Website'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Basic%20Website%20dengan%20harga%20Rp%203.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Business Website',
@@ -42,8 +42,8 @@ class WebAppsPricingController extends Controller
                     'Maintenance 3 Bulan'
                 ],
                 'is_popular' => true,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Business%20Website'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Business%20Website%20dengan%20harga%20Rp%205.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'E-Commerce Website',
@@ -60,8 +60,8 @@ class WebAppsPricingController extends Controller
                     'Maintenance 6 Bulan'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20E-Commerce%20Website'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20E-Commerce%20Website%20dengan%20harga%20Rp%208.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ]
         ];
 

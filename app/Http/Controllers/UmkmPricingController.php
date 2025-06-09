@@ -24,8 +24,8 @@ class UmkmPricingController extends Controller
                     'Free Hosting 6 Bulan'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Starter%20UMKM'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Starter%20UMKM%20dengan%20harga%20Rp%20999.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Growth UMKM',
@@ -42,8 +42,8 @@ class UmkmPricingController extends Controller
                     'Free Hosting 1 Tahun'
                 ],
                 'is_popular' => true,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Growth%20UMKM'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Growth%20UMKM%20dengan%20harga%20Rp%201.999.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Scale UMKM',
@@ -60,8 +60,8 @@ class UmkmPricingController extends Controller
                     'Free Hosting 2 Tahun'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Scale%20UMKM'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Scale%20UMKM%20dengan%20harga%20Rp%202.999.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ]
         ];
 

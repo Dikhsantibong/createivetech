@@ -24,8 +24,8 @@ class VideoEditingPricingController extends Controller
                     'HD Quality (720p)'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Basic%20Video'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Basic%20Video%20dengan%20harga%20Rp%201.500.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Professional Video',
@@ -42,8 +42,8 @@ class VideoEditingPricingController extends Controller
                     'Full HD (1080p)'
                 ],
                 'is_popular' => true,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Professional%20Video'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Professional%20Video%20dengan%20harga%20Rp%203.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Premium Video',
@@ -60,8 +60,8 @@ class VideoEditingPricingController extends Controller
                     '4K Quality'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Premium%20Video'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Premium%20Video%20dengan%20harga%20Rp%205.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ]
         ];
 

@@ -24,8 +24,8 @@ class GraphicDesignPricingController extends Controller
                     'Commercial Use'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Basic%20Design'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Basic%20Design%20dengan%20harga%20Rp%201.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Business Design',
@@ -42,8 +42,8 @@ class GraphicDesignPricingController extends Controller
                     'Priority Support'
                 ],
                 'is_popular' => true,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Business%20Design'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Business%20Design%20dengan%20harga%20Rp%202.500.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ],
             [
                 'title' => 'Premium Design',
@@ -60,8 +60,8 @@ class GraphicDesignPricingController extends Controller
                     'Dedicated Designer'
                 ],
                 'is_popular' => false,
-                'button_text' => 'Pilih Paket',
-                'button_link' => 'https://wa.me/6282346970595?text=Saya%20tertarik%20dengan%20paket%20Premium%20Design'
+                'button_text' => 'Konsultasi via WhatsApp',
+                'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Premium%20Design%20dengan%20harga%20Rp%205.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ]
         ];
 

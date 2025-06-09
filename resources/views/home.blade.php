@@ -123,31 +123,31 @@
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <i class="bi bi-code-slash"></i>
-              <h3><a href="">Web & Mobile Apps</a></h3>
+              <h3><a href="{{ route('pricing.web-apps') }}">Web & Mobile Apps</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
               <i class="bi bi-camera-reels"></i>
-              <h3><a href="">Animasi 2D/3D</a></h3>
+              <h3><a href="{{ route('pricing.animation') }}">Animasi 2D/3D</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <i class="bi bi-film"></i>
-              <h3><a href="">Video Editing</a></h3>
+              <h3><a href="{{ route('pricing.video-editing') }}">Video Editing</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-box">
               <i class="bi bi-share"></i>
-              <h3><a href="">Digital Marketing</a></h3>
+              <h3><a href="{{ route('pricing.digital-marketing') }}">Digital Marketing</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="icon-box">
               <i class="bi bi-palette"></i>
-              <h3><a href="">Desain Grafis</a></h3>
+              <h3><a href="{{ route('pricing.graphic-design') }} ">Desain Grafis</a></h3>
             </div>
           </div>
         </div>
@@ -447,8 +447,8 @@
               <li data-filter="filter-marketing" class="btn btn-sm btn-outline-primary">Marketing</li>
               <li data-filter="filter-design" class="btn btn-sm btn-outline-primary">Design</li>
             </ul>
-          </div>
-        </div>
+              </div>
+              </div>
 
         <div class="row g-4">
           <!-- Web & Apps Portfolio Items -->
