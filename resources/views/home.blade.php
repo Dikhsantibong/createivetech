@@ -1116,6 +1116,19 @@
         position: relative;
         overflow: hidden;
         aspect-ratio: 1/1;
+        background: #f5f5f5;
+      }
+
+      .team .member-img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transform: translateX(-100%);
+        animation: loading 1.5s infinite;
       }
 
       .team .member-img img {
@@ -1123,6 +1136,21 @@
         height: 100%;
         object-fit: cover;
         object-position: center top;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .team .member-img img.loaded {
+        opacity: 1;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
       }
 
       .team .member-info {
@@ -1178,6 +1206,43 @@
         opacity: 1;
       }
     </style>
+
+    <!-- Add lazy loading script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get all team member images
+        const teamImages = document.querySelectorAll('.team .member-img img');
+        
+        // Create an Intersection Observer
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              // Set the src attribute to load the image
+              img.src = img.dataset.src;
+              
+              // Add loaded class when image is loaded
+              img.onload = () => {
+                img.classList.add('loaded');
+              };
+              
+              // Stop observing the image
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        // Observe each image
+        teamImages.forEach(img => {
+          // Store the src in data-src and remove src
+          img.dataset.src = img.src;
+          img.removeAttribute('src');
+          
+          // Start observing the image
+          imageObserver.observe(img);
+        });
+      });
+    </script>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
