@@ -979,12 +979,12 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{{ asset('assets/img/team/team-1.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('assets/img/team/team-1.JPG') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -999,28 +999,10 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="{{ asset('images/team-2.png') }}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Febri Nusa Bakti</h4>
-                <span>Creative Lead</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="{{ asset('images/team-3.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('images/team-2.JPG') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1035,10 +1017,10 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="{{asset('images/team-4.png')}}" class="img-fluid" alt="">
+                <img src="{{ asset('images/team-3.JPG') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1053,11 +1035,149 @@
             </div>
           </div><!-- End Team Member -->
 
+          <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{{asset('images/team-3.JPG')}}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Febri Nusa Bakti</h4>
+                <span>Creative Lead</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{{asset('images/team-5.JPG')}}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>La Ode Pali Aqsan</h4>
+                <span>Marketing Lead</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
         </div>
 
       </div>
 
     </section><!-- /Team Section -->
+
+    <!-- Add updated team styles -->
+    <style>
+      /* Team Section Styles */
+      .team .team-member {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .team .col-lg-15 {
+        width: 20%;
+        padding: 0 15px;
+      }
+
+      @media (max-width: 1200px) {
+        .team .col-lg-15 {
+          width: 33.333%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .team .col-lg-15 {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .team .col-lg-15 {
+          width: 100%;
+        }
+      }
+
+      .team .member-img {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+      }
+
+      .team .member-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      .team .member-info {
+        padding: 25px 15px;
+        text-align: center;
+      }
+
+      .team .member-info h4 {
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: var(--color-secondary);
+      }
+
+      .team .member-info span {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        color: #6c757d;
+      }
+
+      .team .member-img .social {
+        position: absolute;
+        inset: 0;
+        background: rgba(var(--color-primary-rgb), 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .team .member-img .social a {
+        color: var(--color-white);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(var(--color-white-rgb), 0.5);
+        border-radius: 50%;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .team .member-img .social a:hover {
+        color: var(--color-primary);
+        background: var(--color-white);
+      }
+
+      .team .member-img:hover .social {
+        opacity: 1;
+      }
+    </style>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
