@@ -984,7 +984,7 @@
           <div class="col-lg-15 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{{ asset('assets/img/team/team-1.JPG') }}" class="img-fluid" alt="">
+                <img src="{{ asset('images/team-1.JPG') }}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
