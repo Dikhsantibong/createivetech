@@ -859,6 +859,36 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
+            <div class="card portfolio-card h-100 border-0 shadow-sm">
+                <div class="portfolio-img">
+                    <!-- Thumbnail dari YouTube dengan multiple fallback -->
+                    <img src="https://i3.ytimg.com/vi/5RWIf2AVL2U/hqdefault.jpg" 
+                         class="card-img-top" 
+                         alt="Safety Induction Video"
+                         onerror="this.onerror=null; this.src='{{ asset('assets/img/portfolio/video-placeholder.jpg') }}';">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-1">Explainer Animation</h5>
+                    <p class="card-text text-muted small">Video animasi 2D untuk pendidikan</p>
+                    <div class="portfolio-links mt-3">
+                        <a href="#" 
+                            class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video-id="5RWIf2AVL2U"
+                            data-title="Safety Induction Video"
+                            data-description="Video safety induction yang informatif dan menarik untuk perusahaan. Menjelaskan prosedur keselamatan dengan cara yang mudah dipahami.">
+                            <i class="bi bi-play-circle"></i> Preview
+                        </a>
+                        <a href="portfolio-details.html" class="btn btn-sm btn-primary">
+                            <i class="bi bi-link-45deg"></i> Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
           
 
          
