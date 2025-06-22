@@ -1842,23 +1842,71 @@
 
   <!-- Handle video modal -->
   <script>
-  // Handle video modal
-  const videoModal = document.getElementById('videoModal');
-  const videoFrame = videoModal.querySelector('iframe');
-  
-  // Pause video when modal is closed
-  videoModal.addEventListener('hidden.bs.modal', function () {
-    const videoSrc = videoFrame.src;
-    videoFrame.src = '';
-    videoFrame.src = videoSrc;
-  });
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoModal = document.getElementById('videoModal');
+    
+    if (videoModal) {
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        // Get the iframe
+        const videoFrame = this.querySelector('iframe');
+        if (videoFrame) {
+          // Reset iframe src to stop video
+          videoFrame.src = videoFrame.src;
+        }
+        
+        // Remove any lingering backdrop
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+          backdrop.remove();
+        }
+        
+        // Reset body classes
+        document.body.classList.remove('modal-open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+      });
 
-  // Play video when modal is opened
-  videoModal.addEventListener('shown.bs.modal', function () {
-    // You can add autoplay here if needed
-    // videoFrame.src += "?autoplay=1";
+      videoModal.addEventListener('show.bs.modal', function () {
+        // Clean up any existing backdrop before showing new modal
+        const existingBackdrop = document.querySelector('.modal-backdrop');
+        if (existingBackdrop) {
+          existingBackdrop.remove();
+        }
+      });
+    }
   });
   </script>
+
+  <!-- Add this style -->
+  <style>
+  /* Ensure modal backdrop is properly removed */
+  .modal-backdrop {
+    opacity: 0.5;
+  }
+  
+  .modal-backdrop.fade {
+    opacity: 0;
+  }
+  
+  .modal-backdrop.show {
+    opacity: 0.5;
+  }
+  
+  /* Prevent body scroll when modal is open */
+  body.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+  }
+  
+  /* Ensure modal is properly hidden */
+  .modal.fade {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .modal.show {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  </style>
 
   <!-- Add this script before closing body tag -->
   <script>
