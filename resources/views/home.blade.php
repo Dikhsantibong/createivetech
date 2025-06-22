@@ -270,11 +270,11 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2 position-relative">
-            <div class="video-container">
-              <img src="{{ asset('assets/img/about.jpg') }}" class="img-fluid" alt="">
-              <a href="#" class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+            <div class="video-container" id="aboutVideo">
+              <div id="player"></div>
+              <div class="custom-play-button">
                 <i class="bi bi-play-circle"></i>
-              </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
@@ -291,22 +291,127 @@
         </div>
       </div>
 
-      <!-- Video Modal -->
-      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="videoModalLabel">Company Profile Video</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/C5dziKknHTU" title="Company Profile" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <style>
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          overflow: hidden;
+          border-radius: 15px;
+          background: #000;
+        }
+
+        .video-container #player,
+        .video-container iframe {
+          position: absolute;
+          top: -15%;
+          left: -15%;
+          width: 130% !important;
+          height: 130% !important;
+          pointer-events: none;
+          border: none;
+        }
+
+        .custom-play-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          cursor: pointer;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        .custom-play-button i {
+          font-size: 4rem;
+          color: white;
+          text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .video-container:hover .custom-play-button {
+          opacity: 1;
+        }
+
+        /* Hide YouTube branding */
+        .ytp-chrome-top,
+        .ytp-chrome-bottom,
+        .ytp-watermark,
+        .ytp-title-channel,
+        .ytp-title-text,
+        .ytp-gradient-top,
+        .ytp-gradient-bottom,
+        .ytp-embed,
+        .ytp-cards-button,
+        .ytp-pause-overlay,
+        .ytp-ce-element {
+          display: none !important;
+          opacity: 0 !important;
+          visibility: hidden !important;
+        }
+      </style>
+
+      <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            videoId: 'C5dziKknHTU',
+            playerVars: {
+              'autoplay': 0,
+              'controls': 0,
+              'rel': 0,
+              'showinfo': 0,
+              'loop': 1,
+              'playlist': 'C5dziKknHTU',
+              'modestbranding': 1,
+              'mute': 1,
+              'playsinline': 1,
+              'enablejsapi': 1,
+              'origin': window.location.origin,
+              'widget_referrer': window.location.origin,
+              'fs': 0,
+              'iv_load_policy': 3
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                player.playVideo();
+              } else {
+                player.pauseVideo();
+              }
+            });
+          }, { threshold: 0.5 });
+
+          observer.observe(document.getElementById('aboutVideo'));
+        }
+
+        function onPlayerStateChange(event) {
+          const playButton = document.querySelector('.custom-play-button');
+          playButton.style.opacity = event.data === YT.PlayerState.PLAYING ? '0' : '1';
+        }
+
+        // Handle custom play button
+        document.querySelector('.custom-play-button').addEventListener('click', function() {
+          if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+            player.pauseVideo();
+          } else {
+            player.playVideo();
+          }
+        });
+      </script>
     </section><!-- /About Section -->
 
     <!-- Clients Section -->
