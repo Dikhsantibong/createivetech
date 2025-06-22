@@ -666,9 +666,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
             <div class="card portfolio-card h-100 border-0 shadow-sm">
                 <div class="portfolio-img">
-                    <!-- Thumbnail dari YouTube -->
-                    <img src="https://img.youtube.com/vi/C5dziKknHTU/maxresdefault.jpg" class="card-img-top" alt="Explainer Animation">
-              </div>
+                    <!-- Thumbnail dari YouTube dengan multiple fallback -->
+                    <img src="https://i3.ytimg.com/vi/C5dziKknHTU/hqdefault.jpg" 
+                         class="card-img-top" 
+                         alt="Explainer Animation"
+                         onerror="this.onerror=null; this.src='{{ asset('assets/img/portfolio/video-placeholder.jpg') }}';">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title mb-1">Explainer Animation</h5>
                     <p class="card-text text-muted small">Video animasi 2D untuk produk startup</p>
@@ -693,9 +696,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
             <div class="card portfolio-card h-100 border-0 shadow-sm">
                 <div class="portfolio-img">
-                    <!-- Thumbnail dari YouTube -->
-                    <img src="https://img.youtube.com/vi/E7jZ6hDX6f4/maxresdefault.jpg" class="card-img-top" alt="Safety Induction Animation">
-              </div>
+                    <!-- Thumbnail dari YouTube dengan multiple fallback -->
+                    <img src="https://i3.ytimg.com/vi/E7jZ6hDX6f4/hqdefault.jpg" 
+                         class="card-img-top" 
+                         alt="Safety Induction Animation"
+                         onerror="this.onerror=null; this.src='{{ asset('assets/img/portfolio/video-placeholder.jpg') }}';">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title mb-1">Safety Induction Animation</h5>
                     <p class="card-text text-muted small">Animasi safety induction untuk perusahaan</p>
@@ -721,9 +727,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-animation">
             <div class="card portfolio-card h-100 border-0 shadow-sm">
                 <div class="portfolio-img">
-                    <!-- Thumbnail dari YouTube -->
-                    <img src="https://img.youtube.com/vi/qNZ-McWO8jc/maxresdefault.jpg" class="card-img-top" alt="Safety Induction Video">
-              </div>
+                    <!-- Thumbnail dari YouTube dengan multiple fallback -->
+                    <img src="https://i3.ytimg.com/vi/qNZ-McWO8jc/hqdefault.jpg" 
+                         class="card-img-top" 
+                         alt="Safety Induction Video"
+                         onerror="this.onerror=null; this.src='{{ asset('assets/img/portfolio/video-placeholder.jpg') }}';">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title mb-1">Safety Induction Animation</h5>
                     <p class="card-text text-muted small">Video safety induction untuk perusahaan</p>
@@ -1951,5 +1960,142 @@
       });
     });
   </script>
+
+  <style>
+  /* Portfolio thumbnail styles */
+  .portfolio-img {
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa; /* Light background while loading */
+  }
+
+  .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-img img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Remove loading animation */
+  /* .portfolio-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255,255,255,0.3) 50%,
+      transparent 100%
+    );
+    animation: loading 1s infinite;
+    z-index: 1;
+  }
+
+  @keyframes loading {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  } */
+
+  /* Hide loading animation once image is loaded */
+  /* .portfolio-img img.loaded + .portfolio-img::before {
+    display: none;
+  } */
+  </style>
+
+  <script>
+  // Remove loading animation related code
+  document.addEventListener('DOMContentLoaded', function() {
+    const portfolioImages = document.querySelectorAll('.portfolio-img img');
+    portfolioImages.forEach(img => {
+      if (img.complete) {
+        img.classList.add('loaded');
+      } else {
+        img.addEventListener('load', function() {
+          this.classList.add('loaded');
+        });
+      }
+    });
+  });
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle video thumbnails
+    const videoThumbnails = document.querySelectorAll('.portfolio-img img');
+    
+    videoThumbnails.forEach(img => {
+      // Try loading the image
+      const testImage = new Image();
+      testImage.src = img.src;
+      
+      testImage.onerror = function() {
+        // If YouTube thumbnail fails, try the default thumbnail
+        const videoId = img.src.split('/').pop().split('.')[0];
+        img.src = `https://i.ytimg.com/vi/${videoId}/default.jpg`;
+        
+        // If that also fails, use our placeholder
+        img.onerror = function() {
+          img.src = '{{ asset('assets/img/portfolio/video-placeholder.jpg') }}';
+          // Add play button overlay
+          const playButton = document.createElement('div');
+          playButton.className = 'play-overlay';
+          img.parentElement.appendChild(playButton);
+        }
+      }
+    });
+  });
+  </script>
+
+  <style>
+  .portfolio-img {
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    min-height: 200px;
+  }
+
+  .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .play-overlay::after {
+    content: '\F4F9';
+    font-family: "bootstrap-icons";
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  .portfolio-img:hover img {
+    transform: scale(1.05);
+  }
+  </style>
 </body>
 </html>
