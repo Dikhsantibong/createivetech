@@ -65,6 +65,11 @@ class UmkmPricingController extends Controller
             ]
         ];
 
-        return view('pricing.umkm', compact('packages'));
+        return view('pricing.umkm', [
+            'title' => 'Harga Jasa UMKM | Creative Tech Agency',
+            'description' => 'Temukan harga terbaik untuk jasa UMKM profesional.',
+            'keywords' => 'harga umkm, jasa umkm, layanan umkm',
+            'packages' => $packages
+        ]);
     }
-} 
+}

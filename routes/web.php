@@ -1,25 +1,25 @@
 <?php
 
+use index;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PortfolioController;
-use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\PricingController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\PricingController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\UmkmPricingController;
 use App\Http\Controllers\WebAppsPricingController;
 use App\Http\Controllers\AnimationPricingController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\VideoEditingPricingController;
-use App\Http\Controllers\DigitalMarketingPricingController;
 use App\Http\Controllers\GraphicDesignPricingController;
-use App\Http\Controllers\UmkmPricingController;
+use App\Http\Controllers\DigitalMarketingPricingController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
-
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 // Pricing Routes
 Route::get('/pricing/web-apps', [WebAppsPricingController::class, 'index'])->name('pricing.web-apps');
 Route::get('/pricing/animation', [AnimationPricingController::class, 'index'])->name('pricing.animation');
@@ -42,7 +42,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // Sitemap route
-Route::get('sitemap.xml', function() {
+Route::get('sitemap.xml', function () {
     $content = view('sitemap');
     return response($content)->header('Content-Type', 'application/xml');
 });
@@ -56,9 +56,7 @@ Route::get('/our-work', function () {
     return view('pages.our-work');
 })->name('our-work');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
+Route::get('/contact', [ContactController::class, 'index'])->name('pages.contact');
 
 // Contact Form Submission
 Route::post('/contact', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');

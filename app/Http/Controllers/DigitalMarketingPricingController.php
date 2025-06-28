@@ -65,6 +65,11 @@ class DigitalMarketingPricingController extends Controller
             ]
         ];
 
-        return view('pricing.digital-marketing', compact('packages'));
+        return view('pricing.digital-marketing', [
+            'title'       => 'Harga Jasa Digital Marketing | Nama Perusahaan',
+            'description' => 'Temukan harga terbaik untuk jasa digital marketing profesional yang membantu bisnis Anda tumbuh secara online.',
+            'keywords'    => 'digital marketing, jasa marketing online, promosi digital, SEO, iklan online',
+            'packages'    => $packages,
+        ]);
     }
-} 
+}

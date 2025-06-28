@@ -65,6 +65,11 @@ class AnimationPricingController extends Controller
             ]
         ];
 
-        return view('pricing.animation', compact('packages'));
+        return view('pricing.animation', [
+            'title'       => 'Harga Jasa Animasi 2D dan 3D | Creative Tech Agency',
+            'description' => 'Temukan harga terbaik untuk jasa animasi profesional yang membantu bisnis Anda tumbuh secara online.',
+            'keywords'    => 'digital Animasi, jasa Animasi, harga Animasi',
+            'packages'    => $packages,
+        ]);
     }
-} 
+}

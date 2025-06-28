@@ -65,6 +65,11 @@ class WebAppsPricingController extends Controller
             ]
         ];
 
-        return view('pricing.web-apps', compact('packages'));
+        return view('pricing.web-apps', [
+            'title' => 'Harga Jasa Web Apps | Nama Perusahaan',
+            'description' => 'Temukan harga terbaik untuk jasa pembuatan aplikasi web profesional.',
+            'keywords' => 'harga web apps, jasa web, aplikasi web',
+            'packages' => $packages,
+        ]);
     }
-} 
+}

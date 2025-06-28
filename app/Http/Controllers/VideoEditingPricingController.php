@@ -65,6 +65,14 @@ class VideoEditingPricingController extends Controller
             ]
         ];
 
-        return view('pricing.video-editing', compact('packages'));
+        return view(
+            'pricing.video-editing',
+            [
+                'title' => 'Video Editing Pricing',
+                'description' => 'Pilih paket yang sesuai dengan kebutuhan Anda',
+                'keywords' => 'Video Editing Pricing, Video Editing Packages, Video Editing Services, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing, Video Editing Rates, Video Editing Prices, Video Editing Packages, Video Editing Pricing',
+                'packages' => $packages
+            ]
+        );
     }
-} 
+}

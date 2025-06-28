@@ -1,19 +1,21 @@
-@props(['title' => config('seo.default.title'),
-        'description' => config('seo.default.description'),
-        'keywords' => config('seo.default.keywords'),
-        'author' => config('seo.default.author'),
-        'canonical' => config('seo.default.canonical'),
-        'ogTitle' => config('seo.default.og.title'),
-        'ogDescription' => config('seo.default.og.description'),
-        'ogType' => config('seo.default.og.type'),
-        'ogUrl' => config('seo.default.og.url'),
-        'ogSiteName' => config('seo.default.og.site_name'),
-        'ogImage' => config('seo.default.og.image'),
-        'twitterCard' => config('seo.default.twitter.card'),
-        'twitterSite' => config('seo.default.twitter.site'),
-        'twitterTitle' => config('seo.default.twitter.title'),
-        'twitterDescription' => config('seo.default.twitter.description'),
-        'twitterImage' => config('seo.default.twitter.image')])
+@props([
+    'title' => config('seo.default.title'),
+    'description' => config('seo.default.description'),
+    'keywords' => config('seo.default.keywords'),
+    'author' => config('seo.default.author'),
+    'canonical' => config('seo.default.canonical'),
+    'ogTitle' => config('seo.default.og.title'),
+    'ogDescription' => config('seo.default.og.description'),
+    'ogType' => config('seo.default.og.type'),
+    'ogUrl' => config('seo.default.og.url'),
+    'ogSiteName' => config('seo.default.og.site_name'),
+    'ogImage' => config('seo.default.og.image'),
+    'twitterCard' => config('seo.default.twitter.card'),
+    'twitterSite' => config('seo.default.twitter.site'),
+    'twitterTitle' => config('seo.default.twitter.title'),
+    'twitterDescription' => config('seo.default.twitter.description'),
+    'twitterImage' => config('seo.default.twitter.image'),
+])
 
 <!-- Primary Meta Tags -->
 <title>{{ $title }}</title>
@@ -61,14 +63,14 @@
     },
     "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+62-XXX-XXXX-XXXX",
+        "telephone": "+62-822-9311-8410",
         "contactType": "customer service"
     },
     "sameAs": [
         "https://facebook.com/creativetechid",
         "https://twitter.com/creativetechid",
-        "https://instagram.com/creativetechid",
+        "https://www.instagram.com/ctech.agency",
         "https://linkedin.com/company/creativetechid"
     ]
 }
-</script> 
+</script>

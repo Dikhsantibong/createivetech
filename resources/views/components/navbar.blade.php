@@ -1,5 +1,5 @@
 @php
-$currentRoute = Route::currentRouteName();
+    $currentRoute = Route::currentRouteName();
 @endphp
 
 <header id="header" class="header fixed-top d-flex align-items-center">
@@ -12,10 +12,14 @@ $currentRoute = Route::currentRouteName();
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="{{ route('home') }}" class="nav-link {{ $currentRoute === 'home' ? 'active' : '' }}">Beranda</a></li>
-                <li><a href="{{ route('about') }}" class="nav-link {{ $currentRoute === 'about' ? 'active' : '' }}">Tentang Kami</a></li>
-                <li><a href="{{ route('what-we-do') }}" class="nav-link {{ $currentRoute === 'what-we-do' ? 'active' : '' }}">Layanan Kami</a></li>
-                <li><a href="{{ route('our-work') }}" class="nav-link {{ $currentRoute === 'our-work' ? 'active' : '' }}">Portofolio</a></li>
+                <li><a href="{{ route('home') }}"
+                        class="nav-link {{ $currentRoute === 'home' ? 'active' : '' }}">Beranda</a></li>
+                <li><a href="{{ route('about') }}"
+                        class="nav-link {{ $currentRoute === 'about' ? 'active' : '' }}">Tentang Kami</a></li>
+                <li><a href="{{ route('what-we-do') }}"
+                        class="nav-link {{ $currentRoute === 'what-we-do' ? 'active' : '' }}">Layanan Kami</a></li>
+                <li><a href="{{ route('our-work') }}"
+                        class="nav-link {{ $currentRoute === 'our-work' ? 'active' : '' }}">Portofolio</a></li>
                 <li class="dropdown has-dropdown">
                     <a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                     <ul class="dd-box-shadow">
@@ -27,7 +31,8 @@ $currentRoute = Route::currentRouteName();
                         <li><a href="{{ route('pricing.umkm') }}">Paket UMKM</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('contact') }}" class="nav-link {{ $currentRoute === 'contact' ? 'active' : '' }}">Kontak</a></li>
+                <li><a href="{{ route('pages.contact') }}"
+                        class="nav-link {{ $currentRoute === 'contact' ? 'active' : '' }}">Kontak</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

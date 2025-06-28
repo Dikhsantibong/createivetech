@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        return view('pages.contact');
+    }
     public function submit(Request $request)
     {
         $request->validate([
@@ -20,4 +24,4 @@ class ContactController extends Controller
         // For now, we'll just redirect back with a success message
         return redirect()->back()->with('success', 'Thank you for your message. We will get back to you soon!');
     }
-} 
+}

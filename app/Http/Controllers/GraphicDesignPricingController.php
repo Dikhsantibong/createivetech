@@ -64,7 +64,11 @@ class GraphicDesignPricingController extends Controller
                 'button_link' => 'https://wa.me/6282293118410?text=Halo%20CreativeTech%20Agency%2C%0A%0ASaya%20tertarik%20dengan%20paket%20Premium%20Design%20dengan%20harga%20Rp%205.000.000.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.'
             ]
         ];
-
-        return view('pricing.graphic-design', compact('packages'));
+        return view('pricing.graphic-design', [
+            'title' => 'Pricing - Graphic Design',
+            'description' => 'Pilih paket desain grafis yang sesuai dengan kebutuhan bisnis Anda.',
+            'keywords' => 'Pricing, Graphic Design, Design, Creative, Agency',
+            'packages' => $packages
+        ]);
     }
-} 
+}
