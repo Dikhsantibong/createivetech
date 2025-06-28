@@ -14,7 +14,11 @@ use App\Http\Controllers\UmkmPricingController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
 
 // Pricing Routes
 Route::get('/pricing/web-apps', [WebAppsPricingController::class, 'index'])->name('pricing.web-apps');
@@ -23,6 +27,7 @@ Route::get('/pricing/video-editing', [VideoEditingPricingController::class, 'ind
 Route::get('/pricing/digital-marketing', [DigitalMarketingPricingController::class, 'index'])->name('pricing.digital-marketing');
 Route::get('/pricing/graphic-design', [GraphicDesignPricingController::class, 'index'])->name('pricing.graphic-design');
 Route::get('/pricing/umkm', [UmkmPricingController::class, 'index'])->name('pricing.umkm');
+
 
 // Authentication Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -41,3 +46,19 @@ Route::get('sitemap.xml', function() {
     $content = view('sitemap');
     return response($content)->header('Content-Type', 'application/xml');
 });
+
+// Pages Routes
+Route::get('/what-we-do', function () {
+    return view('pages.what-we-do');
+})->name('what-we-do');
+
+Route::get('/our-work', function () {
+    return view('pages.our-work');
+})->name('our-work');
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
+// Contact Form Submission
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
