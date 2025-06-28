@@ -7,8 +7,8 @@
   <div class="container">
     <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="col-xl-8 col-lg-10">
-        <h2>About Us<span>.</span></h2>
-        <p class="hero-quote">"Innovation is not just about technology, it's about creating solutions that make a difference in people's lives."</p>
+        <h2>Tentang Kami<span>.</span></h2>
+        <p class="hero-quote">"Inovasi bukan hanya tentang teknologi, tetapi tentang menciptakan solusi yang membuat perbedaan dalam kehidupan orang-orang."</p>
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@
           </div>
           <div class="member-info">
             <h4>Dikhsan Dwirangga Tibong</h4>
-            <span>CEO/Founder</span>
+            <span>Direktur Utama/Pendiri</span>
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@
           </div>
           <div class="member-info">
             <h4>Diky Ardikawiratama</h4>
-            <span>Commissioner/Founder</span>
+            <span>Komisaris/Pendiri</span>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@
           </div>
           <div class="member-info">
             <h4>Chalifahdien Hamud</h4>
-            <span>General Manager</span>
+            <span>Manajer Umum</span>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
           </div>
           <div class="member-info">
             <h4>Febri Nusa Bakti</h4>
-            <span>Creative Lead</span>
+            <span>Kepala Kreatif</span>
           </div>
         </div>
       </div>
@@ -185,7 +185,7 @@
           </div>
           <div class="member-info">
             <h4>La Ode Pali Aqsan</h4>
-            <span>Marketing Lead</span>
+            <span>Kepala Pemasaran</span>
           </div>
         </div>
       </div>

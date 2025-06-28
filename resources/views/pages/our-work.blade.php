@@ -7,8 +7,8 @@
   <div class="container">
     <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="col-xl-8 col-lg-10">
-        <h2>Our Work<span>.</span></h2>
-        <p class="hero-quote">"Every project is a story of innovation, creativity, and excellence in execution."</p>
+        <h2>Portofolio<span>.</span></h2>
+        <p class="hero-quote">"Setiap proyek adalah cerita tentang inovasi, kreativitas, dan keunggulan dalam eksekusi."</p>
       </div>
     </div>
   </div>
@@ -17,8 +17,8 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Portfolio</h2>
-    <p>Discover Our Latest Projects</p>
+    <h2>Portofolio</h2>
+    <p>Temukan Proyek Terbaru Kami</p>
   </div>
 
   <div class="container">
@@ -26,12 +26,12 @@
     <div class="row justify-content-center mb-5">
       <div class="col-lg-8">
         <ul class="portfolio-filters d-flex justify-content-center gap-2 p-0" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active btn btn-sm btn-outline-primary">All</li>
-          <li data-filter="filter-web" class="btn btn-sm btn-outline-primary">Web & Apps</li>
-          <li data-filter="filter-animation" class="btn btn-sm btn-outline-primary">Animation</li>
+          <li data-filter="*" class="filter-active btn btn-sm btn-outline-primary">Semua</li>
+          <li data-filter="filter-web" class="btn btn-sm btn-outline-primary">Web & Aplikasi</li>
+          <li data-filter="filter-animation" class="btn btn-sm btn-outline-primary">Animasi</li>
           <li data-filter="filter-video" class="btn btn-sm btn-outline-primary">Video</li>
-          <li data-filter="filter-marketing" class="btn btn-sm btn-outline-primary">Marketing</li>
-          <li data-filter="filter-design" class="btn btn-sm btn-outline-primary">Design</li>
+          <li data-filter="filter-marketing" class="btn btn-sm btn-outline-primary">Pemasaran</li>
+          <li data-filter="filter-design" class="btn btn-sm btn-outline-primary">Desain</li>
         </ul>
       </div>
     </div>
@@ -48,10 +48,10 @@
             <p class="card-text text-muted small">Platform terintegrasi untuk monitoring dan analisis kinerja pembangkit listrik secara real-time.</p>
             <div class="portfolio-links mt-3">
               <a href="{{ asset('assets/img/portfolio/web-1.png') }}" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn">
-                <i class="bi bi-zoom-in"></i> Preview
+                <i class="bi bi-zoom-in"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -68,10 +68,10 @@
             <p class="card-text text-muted small">Platform terintegrasi untuk monitoring dan Daily Meeting Untuk Meningkatkan Kinerja Perusahaan</p>
             <div class="portfolio-links mt-3">
               <a href="{{ asset('assets/img/portfolio/web-2.png') }}" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn">
-                <i class="bi bi-zoom-in"></i> Preview
+                <i class="bi bi-zoom-in"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -88,10 +88,10 @@
             <p class="card-text text-muted small">Platform terintegrasi untuk Menampilkan Profile dan Berita Seputar Biro SDM Polda Sultra</p>
             <div class="portfolio-links mt-3">
               <a href="{{ asset('assets/img/portfolio/web-3.png') }}" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn">
-                <i class="bi bi-zoom-in"></i> Preview
+                <i class="bi bi-zoom-in"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -108,10 +108,10 @@
             <p class="card-text text-muted small">Aplikasi Mobile Untuk Monitoring Kehadiran dan Pengajuan Cuti Biro SDM Polda Sultra</p>
             <div class="portfolio-links mt-3">
               <a href="{{ asset('assets/img/portfolio/web-4.png') }}" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn">
-                <i class="bi bi-zoom-in"></i> Preview
+                <i class="bi bi-zoom-in"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -125,14 +125,14 @@
             <img src="https://i3.ytimg.com/vi/C5dziKknHTU/hqdefault.jpg" class="card-img-top" alt="Explainer Animation">
           </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Explainer Animation</h5>
+            <h5 class="card-title mb-1">Animasi Penjelasan</h5>
             <p class="card-text text-muted small">Video animasi 2D untuk produk startup</p>
             <div class="portfolio-links mt-3">
               <a href="#" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="C5dziKknHTU">
-                <i class="bi bi-play-circle"></i> Preview
+                <i class="bi bi-play-circle"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -145,14 +145,14 @@
             <img src="https://i3.ytimg.com/vi/E7jZ6hDX6f4/hqdefault.jpg" class="card-img-top" alt="Safety Animation">
           </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Safety Induction Animation</h5>
+            <h5 class="card-title mb-1">Animasi Induksi Keselamatan</h5>
             <p class="card-text text-muted small">Animasi safety induction untuk perusahaan</p>
             <div class="portfolio-links mt-3">
               <a href="#" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="E7jZ6hDX6f4">
-                <i class="bi bi-play-circle"></i> Preview
+                <i class="bi bi-play-circle"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -166,14 +166,14 @@
             <img src="https://i3.ytimg.com/vi/qNZ-McWO8jc/hqdefault.jpg" class="card-img-top" alt="Safety Video">
           </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Safety Induction Video</h5>
+            <h5 class="card-title mb-1">Video Induksi Keselamatan</h5>
             <p class="card-text text-muted small">Video safety induction untuk perusahaan</p>
             <div class="portfolio-links mt-3">
               <a href="#" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="qNZ-McWO8jc">
-                <i class="bi bi-play-circle"></i> Preview
+                <i class="bi bi-play-circle"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -186,14 +186,14 @@
             <img src="https://i3.ytimg.com/vi/5RWIf2AVL2U/hqdefault.jpg" class="card-img-top" alt="Educational Animation">
           </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Explainer Animation</h5>
+            <h5 class="card-title mb-1">Animasi Penjelasan</h5>
             <p class="card-text text-muted small">Video animasi 2D untuk pendidikan</p>
             <div class="portfolio-links mt-3">
               <a href="#" class="btn btn-sm btn-outline-primary me-2 portfolio-preview-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="5RWIf2AVL2U">
-                <i class="bi bi-play-circle"></i> Preview
+                <i class="bi bi-play-circle"></i> Pratinjau
               </a>
               <a href="portfolio-details.html" class="btn btn-sm btn-primary">
-                <i class="bi bi-link-45deg"></i> Details
+                <i class="bi bi-link-45deg"></i> Detail
               </a>
             </div>
           </div>
@@ -209,7 +209,7 @@
     <div class="modal-content">
       <div class="modal-header border-0">
         <h5 class="modal-title"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
       </div>
       <div class="modal-body p-0">
         <!-- Video content will be inserted here -->
