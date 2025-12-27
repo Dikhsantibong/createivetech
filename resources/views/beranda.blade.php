@@ -509,11 +509,11 @@
                                             </div>
 
                                             <div class="mil-team-card mil-up mil-mb-30">
-                                                <img src="img/faces/4.jpg" alt="Team member">
+                                                <img src="{{ asset('ashley/img/faces/team/MARKETING.png') }}" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Jumain Zulkaidah</a></h5>
-                                                        <p class="mil-link mil-light-soft mil-mb-10">IT Leader</p>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">La Ode Pali Aqsan</a></h5>
+                                                        <p class="mil-link mil-light-soft mil-mb-10">Marketing Lead</p>
                                                         <ul class="mil-social-icons mil-center">
                                                             <li>
                                                                 <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
