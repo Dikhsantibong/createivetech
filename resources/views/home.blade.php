@@ -138,7 +138,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="{{ asset('assets/img/hero-bg.png') }}" alt="" data-aos="fade-in">
+      <img src="{{ asset('assets/img/hero.png') }}" alt="" data-aos="fade-in">
 
       <div class="container">
 
