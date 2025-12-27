@@ -1,0 +1,40 @@
+{% load static %}
+<!-- jQuery library js -->
+    <script src="{% static 'assets/js/lib/jquery-3.7.1.min.js' %}"></script>
+    <!-- Apex Chart js -->
+    <script src="{% static 'assets/js/lib/apexcharts.min.js' %}"></script>
+    <!-- Data Table js -->
+    <script src="{% static 'assets/js/lib/simple-datatables.min.js' %}"></script>
+    <!-- Iconify Font js -->
+    <script src="{% static 'assets/js/lib/iconify-icon.min.js' %}"></script>
+    <!-- jQuery UI js -->
+    <script src="{% static 'assets/js/lib/jquery-ui.min.js' %}"></script>
+    <!-- Vector Map js -->
+    <script src="{% static 'assets/js/lib/jquery-jvectormap-2.0.5.min.js' %}"></script>
+    <script src="{% static 'assets/js/lib/jquery-jvectormap-world-mill-en.js' %}"></script>
+    <!-- Popup js -->
+    <script src="{% static 'assets/js/lib/magnifc-popup.min.js' %}"></script>
+    <!-- Slick Slider js -->
+    <script src="{% static 'assets/js/lib/slick.min.js' %}"></script>
+    <!-- prism js -->
+    <script src="{% static 'assets/js/lib/prism.js' %}"></script>
+    <!-- file upload js -->
+    <script src="{% static 'assets/js/lib/file-upload.js' %}"></script>
+    <!-- audio player -->
+    <script src="{% static 'assets/js/lib/audioplayer.js' %}"></script>
+
+    <script src="{% static 'assets/js/flowbite.min.js' %}"></script>
+    <!-- main js -->
+    <script src="{% static 'assets/js/app.js' %}"></script>
+  
+    {% if multi_script %}
+        {% for script_path in multi_script %}
+            <script src="{% static script_path %}"></script>
+        {% endfor %}
+    {% endif %}
+
+    {% if script %}
+        <script src="{% static script %}"></script>
+    {% endif %} 
+
+    
