@@ -183,12 +183,16 @@
                                 <div class="swiper-container mil-portfolio-slider mil-up">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-
                                             <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
                                                 <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/works/1.jpg" alt="cover">
-                                                    </div>
+                                                    <div class="mil-cover mil-video-cover" data-swiper-parallax-scale="1.3">
+                                                        <iframe 
+                                                            src="https://www.youtube.com/embed/XF3RkKDT7Q8?autoplay=1&mute=1&loop=1&playlist=XF3RkKDT7Q8&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+                                                            frameborder="0"
+                                                            allow="autoplay; fullscreen"
+                                                            allowfullscreen>
+                                                        </iframe>
+                                                    </div>                                                    
                                                 </div>
                                                 <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
                                                     <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
@@ -350,7 +354,7 @@
                     </div>
                 </section>
                 <!-- portfolio end -->
-            
+                
 
                 <!-- hidden elements -->
                 <div class="mil-hidden-elements">
