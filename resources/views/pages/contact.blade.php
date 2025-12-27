@@ -59,7 +59,7 @@
 
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li>
+                                    <li class="mil-active">
                                         <a href="{{ url('/') }}">Homepage</a>
                                     </li>
                                     <li>
@@ -68,11 +68,15 @@
                                     <li>
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
-                                    <li class="mil-active">
+                                    <li>
+                                        <a href="{{ url('/team') }}">Team</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
+
 
                         </div>
                         <div class="col-xl-7">

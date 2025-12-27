@@ -31,10 +31,10 @@
                                                         <a href="{{ url('/services') }}">Services</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="{{ url('/contact') }}">Contact</a>
+                                                        <a href="{{ url('/team') }}">Team</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="{{ url('/blog') }}">Blog</a>
+                                                        <a href="{{ url('/contact') }}">Contact</a>
                                                     </li>
                                                 </ul>
                                             </nav>

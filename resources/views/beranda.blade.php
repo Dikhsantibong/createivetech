@@ -69,6 +69,9 @@
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
                                     <li>
+                                        <a href="{{ url('/team') }}">Team</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
                                 </ul>
@@ -283,12 +286,16 @@
                 </section>
                 <!-- about end -->
 
-                <!-- services -->
+                            <!-- services -->
                 <section class="mil-dark-bg">
                     <div class="mi-invert-fix">
                         <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="2.4" data-value-2="1.4" style="top: 300px; right: -100px"></div>
-                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="2" data-value-2="1" style="left: 150px"></div>
+                            <div class="mil-animation mil-position-1 mil-scale"
+                                data-value-1="2.4" data-value-2="1.4"
+                                style="top: 300px; right: -100px"></div>
+                            <div class="mil-animation mil-position-2 mil-scale"
+                                data-value-1="2" data-value-2="1"
+                                style="left: 150px"></div>
                         </div>
 
                         <div class="container mil-p-120-0">
@@ -298,8 +305,8 @@
                                 <div class="row">
                                     <div class="col-lg-10">
                                         <span class="mil-suptitle mil-light-soft mil-suptitle-right mil-up">
-                                            Strategic creative partner for government institutions,<br>
-                                            corporations, and growing businesses.
+                                            Integrated IT & creative solutions trusted by government,<br>
+                                            corporations, and growing enterprises.
                                         </span>
                                     </div>
                                 </div>
@@ -309,16 +316,16 @@
                                         <img src="img/photo/2.jpg" alt="professional team">
                                     </span>
                                     <h2 class="mil-h1 mil-muted mil-center">
-                                        Impactful <span class="mil-thin">Creative</span>
+                                        Technology-Driven <span class="mil-thin">Creativity</span>
                                     </h2>
                                 </div>
 
                                 <div class="mil-complex-text justify-content-center mil-up">
                                     <h2 class="mil-h1 mil-muted mil-center">
-                                        Solutions for <span class="mil-thin">Organizations.</span>
+                                        For Real-World <span class="mil-thin">Impact.</span>
                                     </h2>
                                     <a href="{{ url('/services') }}" class="mil-services-button mil-button mil-arrow-place">
-                                        <span>Explore Our Services</span>
+                                        <span>View Our Capabilities</span>
                                     </a>
                                 </div>
                             </div>
@@ -326,49 +333,57 @@
                             <!-- Services Grid -->
                             <div class="row mil-services-grid m-0">
 
+                                <!-- Video Production -->
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
                                     <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
-                                            Branding & <br>Institutional Identity
+                                            Video <br>Production
                                         </h5>
                                         <p class="mil-light-soft mil-mb-30">
-                                            Building strong, consistent brand identities for government programs, enterprises, and SMEs.
+                                            Professional video content for government programs, corporate profiles,
+                                            campaigns, documentation, and digital media.
                                         </p>
                                         <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
                                     </a>
                                 </div>
 
+                                <!-- Software Development -->
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
                                     <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
-                                            Website & <br>System Development
+                                            Software <br>Development
                                         </h5>
                                         <p class="mil-light-soft mil-mb-30">
-                                            Secure, scalable websites and digital systems tailored for institutions and businesses.
+                                            Custom web and system development focused on security,
+                                            scalability, and long-term operational efficiency.
                                         </p>
                                         <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
                                     </a>
                                 </div>
 
+                                <!-- Motion 3D & Design -->
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
                                     <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
-                                            Campaign & <br>Public Communication
+                                            Motion 3D <br>& Design
                                         </h5>
                                         <p class="mil-light-soft mil-mb-30">
-                                            Strategic campaigns for public outreach, corporate communication, and market activation.
+                                            High-quality motion graphics, 3D visualization, and visual design
+                                            for education, branding, and digital experiences.
                                         </p>
                                         <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
                                     </a>
                                 </div>
 
+                                <!-- IT Consulting -->
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
                                     <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
-                                            Creative Strategy & <br>Digital Transformation
+                                            IT <br>Consulting
                                         </h5>
                                         <p class="mil-light-soft mil-mb-30">
-                                            End-to-end consulting to help organizations adapt, scale, and lead in the digital era.
+                                            Strategic IT consulting to support digital transformation,
+                                            system planning, and technology-driven decision making.
                                         </p>
                                         <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
                                     </a>
@@ -393,7 +408,7 @@
 
                                     <p class="mil-up mil-mb-60">Together, our creative team is committed to delivering impactful work that exceeds expectations.</p>
 
-                                    <div class="mil-up"><a href="team.html" class="mil-button mil-arrow-place mil-mb-60"><span>Read more</span></a></div>
+                                    <div class="mil-up"><a href="{{ '/team' }}" class="mil-button mil-arrow-place mil-mb-60"><span>Read more</span></a></div>
 
                                     <h4 class="mil-up"><span class="mil-thin">We</span> delivering <br><span class="mil-thin">exceptional</span> results.</h4>
                                 </div>
@@ -414,26 +429,48 @@
                                                         <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Dikhsan Dwirangga Tibong</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">Chief Executive Officer</p>
                                                         <ul class="mil-social-icons mil-center">
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-github"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="mil-team-card mil-up mil-mb-30">
-                                                <img src="img/faces/3.jpg" alt="Team member">
+                                                <img src="{{ asset('ashley/img/faces/team/KOMISARIS.png') }}" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Oscar Freeman</a></h5>
-                                                        <p class="mil-link mil-light-soft mil-mb-10">Frontend Dev</p>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Diki Ardikawiratama</a></h5>
+                                                        <p class="mil-link mil-light-soft mil-mb-10">Comissioner</p>
                                                         <ul class="mil-social-icons mil-center">
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-github"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -451,10 +488,21 @@
                                                         <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Chalifahdien Hamud</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">Chief Operation Officer</p>
                                                         <ul class="mil-social-icons mil-center">
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-github"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -464,13 +512,24 @@
                                                 <img src="img/faces/4.jpg" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Lisa Trueman</a></h5>
-                                                        <p class="mil-link mil-light-soft mil-mb-10">UI/UX Designer</p>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Jumain Zulkaidah</a></h5>
+                                                        <p class="mil-link mil-light-soft mil-mb-10">IT Leader</p>
                                                         <ul class="mil-social-icons mil-center">
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-github"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
