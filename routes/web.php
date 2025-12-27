@@ -1,26 +1,50 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Erp\AuthController;
+use App\Http\Controllers\Erp\DashboardController;
 
-Route::get('/', function () {
-    return view('beranda');
-});
+/*
+|--------------------------------------------------------------------------
+| PUBLIC PAGES (COMPANY PROFILE)
+|--------------------------------------------------------------------------
+*/
+Route::view('/', 'beranda')->name('home');
 
-Route::get('/portfolio', function () {
-    return view('pages.portfolio');
-});
+Route::view('/portfolio', 'pages.portfolio')->name('portfolio');
+Route::view('/services', 'pages.service')->name('services');
+Route::view('/team', 'pages.team')->name('team');
+Route::view('/contact', 'pages.contact')->name('contact');
 
-Route::get('/services', function () {
-    return view('pages.service');
-});
+/*
+|--------------------------------------------------------------------------
+| ERP AUTHENTICATION
+|--------------------------------------------------------------------------
+*/
+Route::get('/login', [AuthController::class, 'showLogin'])
+    ->name('erp.login');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::post('/login', [AuthController::class, 'login'])
+    ->name('erp.login.submit');
 
-Route::get('/team', function () {
-    return view('pages.team');
-});
-// Route::get('/newsletter', function () {
-//     return view('pages.newsletter');
-// });
+Route::post('/logout', [AuthController::class, 'logout'])
+    ->name('erp.logout');
+
+/*
+|--------------------------------------------------------------------------
+| ERP DASHBOARD (INTERNAL ONLY)
+|--------------------------------------------------------------------------
+*/
+Route::middleware(['auth'])
+    ->prefix('dashboard')
+    ->name('erp.')
+    ->group(function () {
+
+        Route::get('/', [DashboardController::class, 'index'])
+            ->name('dashboard');
+
+        // contoh future modules
+        // Route::get('/projects', ...)->name('projects');
+        // Route::get('/finance', ...)->name('finance');
+        // Route::get('/hr', ...)->name('hr');
+    });
