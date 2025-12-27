@@ -44,7 +44,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -59,43 +59,17 @@
 
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
-                                        <ul>
-                                            <li><a href="home-1.html">Landing page</a></li>
-                                            <li><a href="home-2.html">Personal</a></li>
-                                            <li><a href="portfolio-3.html">Portfolio slider</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="{{ url('/') }}">Homepage</a>
                                     </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Portfolio</a>
-                                        <ul>
-                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="{{ url('/portfolio') }}">Portfolio</a>
                                     </li>
-                                    <li class="mil-has-children mil-active">
-                                        <a href="#.">Services</a>
-                                        <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="service.html">Single service</a></li>
-                                        </ul>
+                                    <li class="mil-active">
+                                        <a href="{{ url('/services') }}">Services</a>
                                     </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Newsletter</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="publication.html">Publication</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Other pages</a>
-                                        <ul>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -116,12 +90,12 @@
                                             <h6 class="mil-muted mil-mb-30">Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Interior design studio</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Home Security Camera</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Cascade of Lava</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Air Pro by Molekule</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Tony's Chocolonely</a></li>
                                             </ul>
 
                                         </div>
@@ -173,7 +147,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -205,8 +179,8 @@
                                 </div>
                                 <div class="container">
                                     <ul class="mil-breadcrumbs mil-light mil-mb-60">
-                                        <li><a href="home-1.html">Homepage</a></li>
-                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="{{ url('/') }}">Homepage</a></li>
+                                        <li><a href="{{ url('/services') }}">Services</a></li>
                                     </ul>
                                     <h1 class="mil-muted mil-mb-60">This is <span class="mil-thin">what</span><br> we do <span class="mil-thin">best</span></h1>
                                     <a href="#services" class="mil-link mil-accent mil-arrow-place mil-down-arrow">
@@ -231,7 +205,7 @@
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-6 col-lg-6">
-                                                <a href="service.html" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
+                                                <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
                                                     <h4 class="mil-muted mil-up mil-mb-30">Branding and <br>Identity Design</h4>
                                                     <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
@@ -246,7 +220,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-md-6 col-lg-6">
-                                                <a href="service.html" class="mil-service-card-lg mil-more mil-accent-cursor">
+                                                <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor">
                                                     <h4 class="mil-muted mil-up mil-mb-30">Website Design <br>and Development</h4>
                                                     <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
@@ -261,7 +235,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-md-6 col-lg-6">
-                                                <a href="service.html" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
+                                                <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
                                                     <h4 class="mil-muted mil-up mil-mb-30">Advertising and <br>Marketing Campaigns</h4>
                                                     <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
@@ -276,7 +250,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-md-6 col-lg-6">
-                                                <a href="service.html" class="mil-service-card-lg mil-more mil-accent-cursor">
+                                                <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor">
                                                     <h4 class="mil-muted mil-up mil-mb-30">Creative Consulting <br>Concept Development</h4>
                                                     <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
@@ -311,7 +285,7 @@
                         </div>
                         <div class="mil-center">
                             <h2 class="mil-up mil-mb-60">Let’s make an <span class="mil-thin">impact</span><br> together. Ready <span class="mil-thin">when you are</span></h2>
-                            <div class="mil-up"><a href="contact.html" class="mil-button mil-arrow-place"><span>Contact us</span></a></div>
+                            <div class="mil-up"><a href="{{ url('/contact') }}" class="mil-button mil-arrow-place"><span>Contact us</span></a></div>
                         </div>
                     </div>
                 </section>

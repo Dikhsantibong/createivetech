@@ -68,9 +68,6 @@
                                     <li>
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
-                                    <li>
-                                        <a href="{{ url('/blog') }}">Newsletter</a>
-                                    </li>
                                     <li class="mil-active">
                                         <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
@@ -93,12 +90,12 @@
                                             <h6 class="mil-muted mil-mb-30">Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Interior design studio</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Home Security Camera</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Cascade of Lava</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Air Pro by Molekule</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Tony's Chocolonely</a></li>
                                             </ul>
 
                                         </div>
@@ -190,7 +187,7 @@
                 <!-- map -->
                 <div class="mil-map-frame mil-up">
                     <div class="mil-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1396.5769090312324!2d-73.6519672!3d45.5673453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91f8abc30e0ff%3A0xfc6d9cbb49022e9c!2sManoir%20Saint-Joseph!5e0!3m2!1sen!2sua!4v1685485811069!5m2!1sen!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.2900985522464!2d122.54852429999999!3d-3.9851699999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8b0210fa23a0c7%3A0x8e700ef7732c09e!2sKambu%2C%20Kendari%20City%2C%20Southeast%20Sulawesi!5e0!3m2!1sen!2sid!4v1717360385884!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <!-- map end -->

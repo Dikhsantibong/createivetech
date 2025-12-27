@@ -44,7 +44,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -69,10 +69,7 @@
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/newsletter') }}">Newsletter</a>
-                                    </li>
-                                    <li>
-                                        <a href="#.">Other pages</a>
+                                        <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -93,12 +90,12 @@
                                             <h6 class="mil-muted mil-mb-30">Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Interior design studio</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Home Security Camera</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Cascade of Lava</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Air Pro by Molekule</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Tony's Chocolonely</a></li>
                                             </ul>
 
                                         </div>
@@ -150,7 +147,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -201,11 +198,11 @@
                                 </div>
                                 
 
-                                <a href="services.html" class="mil-button mil-arrow-place mil-btn-space">
+                                <a href="{{ url('/services') }}" class="mil-button mil-arrow-place mil-btn-space">
                                     <span>What we do</span>
                                 </a>
 
-                                <a href="portfolio-1.html" class="mil-link mil-muted mil-arrow-place">
+                                <a href="{{ url('/portfolio') }}" class="mil-link mil-muted mil-arrow-place">
                                     <span>View works</span>
                                 </a>
 
@@ -320,7 +317,7 @@
                                     <h2 class="mil-h1 mil-muted mil-center">
                                         Solutions for <span class="mil-thin">Organizations.</span>
                                     </h2>
-                                    <a href="services.html" class="mil-services-button mil-button mil-arrow-place">
+                                    <a href="{{ url('/services') }}" class="mil-services-button mil-button mil-arrow-place">
                                         <span>Explore Our Services</span>
                                     </a>
                                 </div>
@@ -330,7 +327,7 @@
                             <div class="row mil-services-grid m-0">
 
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
+                                    <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
                                             Branding & <br>Institutional Identity
                                         </h5>
@@ -342,7 +339,7 @@
                                 </div>
 
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
+                                    <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
                                             Website & <br>System Development
                                         </h5>
@@ -354,7 +351,7 @@
                                 </div>
 
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
+                                    <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
                                             Campaign & <br>Public Communication
                                         </h5>
@@ -366,7 +363,7 @@
                                 </div>
 
                                 <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
+                                    <a href="{{ url('/services') }}" class="mil-service-card-sm mil-up">
                                         <h5 class="mil-muted mil-mb-30">
                                             Creative Strategy & <br>Digital Transformation
                                         </h5>
@@ -414,7 +411,7 @@
                                                 <img src="{{ asset('ashley/img/faces/team/CEO.png') }}" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Dikhsan Dwirangga Tibong</a></h5>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Dikhsan Dwirangga Tibong</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">Chief Executive Officer</p>
                                                         <ul class="mil-social-icons mil-center">
                                                             <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
@@ -430,7 +427,7 @@
                                                 <img src="img/faces/3.jpg" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Oscar Freeman</a></h5>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Oscar Freeman</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">Frontend Dev</p>
                                                         <ul class="mil-social-icons mil-center">
                                                             <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
@@ -451,7 +448,7 @@
                                                 <img src="{{ asset('ashley/img/faces/team/COO.png') }}" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Chalifahdien Hamud</a></h5>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Chalifahdien Hamud</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">Chief Operation Officer</p>
                                                         <ul class="mil-social-icons mil-center">
                                                             <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
@@ -467,7 +464,7 @@
                                                 <img src="img/faces/4.jpg" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Lisa Trueman</a></h5>
+                                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Lisa Trueman</a></h5>
                                                         <p class="mil-link mil-light-soft mil-mb-10">UI/UX Designer</p>
                                                         <ul class="mil-social-icons mil-center">
                                                             <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>

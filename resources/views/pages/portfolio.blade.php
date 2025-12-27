@@ -44,7 +44,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -69,10 +69,7 @@
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/newsletter') }}">Newsletter</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/other-pages') }}">Other pages</a>
+                                        <a href="{{ url('/contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -93,12 +90,12 @@
                                             <h6 class="mil-muted mil-mb-30">Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Monitoring System</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Monitoring System</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Home Security Camera</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Cascade of Lava</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Air Pro by Molekule</a></li>
+                                                <li><a href="{{ url('/portfolio') }}" class="mil-light-soft">Tony's Chocolonely</a></li>
                                             </ul>
 
                                         </div>
@@ -150,7 +147,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="{{ url('/') }}" class="mil-logo">
                     <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
                 </a>
                 <div class="mil-menu-btn">
@@ -203,7 +200,7 @@
                                                         <h5>Monitoring & Daily Meeting System</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="120" data-swiper-parallax-opacity="0">
-                                                        <a href="project-1.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
@@ -228,7 +225,7 @@
                                                         <h5>Warehouse Monitoring System</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-2.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
@@ -253,7 +250,7 @@
                                                         <h5>Kemia Honest Skincare</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-3.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
@@ -278,7 +275,7 @@
                                                         <h5>Cascade of Lava</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-4.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
@@ -303,7 +300,7 @@
                                                         <h5>Air Pro by Molekule</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-5.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
@@ -328,7 +325,7 @@
                                                         <h5>Tony's Chocolonely</h5>
                                                     </div>
                                                     <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-6.html" class="mil-button mil-arrow-place">
+                                                        <a href="{{ url('/portfolio') }}" class="mil-button mil-arrow-place">
                                                             <span>View Project</span>
                                                         </a>
                                                     </div>
