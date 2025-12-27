@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Commands\\GenerateSitemap' => $baseDir . '/app/Console/Commands/GenerateSitemap.php',
+    'App\\Http\\Controllers\\AboutController' => $baseDir . '/app/Http/Controllers/AboutController.php',
     'App\\Http\\Controllers\\Admin\\HeroSectionController' => $baseDir . '/app/Http/Controllers/Admin/HeroSectionController.php',
     'App\\Http\\Controllers\\AnimationPricingController' => $baseDir . '/app/Http/Controllers/AnimationPricingController.php',
     'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',
