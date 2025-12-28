@@ -53,8 +53,7 @@
                             <span class="nxl-mtext">Payment</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="payment.php">Payment</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="invoice-view.php">Invoice View</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="{{ route('erp.dashboard.invoice.index') }}">Payment</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="invoice-create.php">Invoice Create</a></li>
                         </ul>
                     </li>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Erp\AuthController;
 use App\Http\Controllers\Erp\DashboardController;
+use App\Http\Controllers\Erp\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,14 +38,15 @@ Route::post('/logout', [AuthController::class, 'logout'])
 */
 Route::middleware(['auth'])
     ->prefix('dashboard')
-    ->name('erp.')
+    ->name('erp.dashboard.')
     ->group(function () {
 
+        // dashboard utama
         Route::get('/', [DashboardController::class, 'index'])
-            ->name('dashboard');
+            ->name('index');
 
-        // contoh future modules
-        // Route::get('/projects', ...)->name('projects');
-        // Route::get('/finance', ...)->name('finance');
-        // Route::get('/hr', ...)->name('hr');
+        // invoice / payment
+        Route::get('/invoice', [PaymentController::class, 'index'])
+            ->name('invoice.index');
     });
+
