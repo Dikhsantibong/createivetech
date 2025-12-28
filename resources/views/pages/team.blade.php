@@ -56,10 +56,9 @@
                 <div class="mil-menu-content">
                     <div class="row">
                         <div class="col-xl-5">
-
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-active">
+                                    <li>
                                         <a href="{{ url('/') }}">Homepage</a>
                                     </li>
                                     <li>
@@ -68,7 +67,7 @@
                                     <li>
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
-                                    <li>
+                                    <li class="mil-active">
                                         <a href="{{ url('/team') }}">Team</a>
                                     </li>
                                     <li>
@@ -407,10 +406,10 @@
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-3">
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/faces/7.jpg" alt="Team member">
+                                    <img src="{{ asset('ashley/img/faces/team/EDITOR.png') }}" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Wahu Rifki Hidayah</a></h5>
+                                            <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Wahyu Rifky Hidayah</a></h5>
                                             <p class="mil-link mil-light-soft mil-mb-10">Video Editor & Videografer</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>
@@ -436,10 +435,10 @@
                             <div class="col-sm-6 col-md-4 col-lg-3">
 
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/faces/8.jpg" alt="Team member">
+                                    <img src="{{ asset('ashley/img/faces/team/ITLEADER.png') }}" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Jumain Zulkaidah</a></h5>
+                                            <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Jumain Zulkaidah</a></h5>
                                             <p class="mil-link mil-light-soft mil-mb-10">IT Leader</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>

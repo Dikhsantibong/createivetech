@@ -59,13 +59,13 @@
 
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-active">
+                                    <li>
                                         <a href="{{ url('/') }}">Homepage</a>
                                     </li>
                                     <li>
                                         <a href="{{ url('/portfolio') }}">Portfolio</a>
                                     </li>
-                                    <li>
+                                    <li class="mil-active">
                                         <a href="{{ url('/services') }}">Services</a>
                                     </li>
                                     <li>
