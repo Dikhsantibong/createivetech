@@ -29,7 +29,14 @@
 
 <body>
     @yield('content')
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH7Y7F3J08"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-EH7Y7F3J08');
+    </script>
     <!-- JS -->
     <script src="{{ asset('ashley/js/plugins/jquery.min.js') }}"></script>
     <script src="{{ asset('ashley/js/plugins/swup.min.js') }}"></script>
