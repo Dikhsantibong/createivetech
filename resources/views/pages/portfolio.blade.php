@@ -217,14 +217,19 @@
                                             <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
                                                 <div class="mil-cover-frame mil-drag">
                                                     <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/works/2.jpg" alt="cover">
+                                                        <iframe 
+                                                            src="https://www.youtube.com/embed/0lFoP1iOfs4?autoplay=1&mute=1&loop=1&playlist=0lFoP1iOfs4&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+                                                            frameborder="0"
+                                                            allow="autoplay; fullscreen"
+                                                            allowfullscreen>
+                                                        </iframe>
                                                     </div>
                                                 </div>
                                                 <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
                                                     <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
                                                         <div class="mil-labels mil-mb-15">
                                                             <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                                            <div class="mil-label mil-upper">July 2025</div>
                                                         </div>
                                                         <h5>Warehouse Monitoring System</h5>
                                                     </div>
