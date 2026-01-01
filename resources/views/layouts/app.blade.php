@@ -4,6 +4,7 @@
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qhNRxL1_C6wiJV69zzODux_ph4AbjeIx160noXlp6RA" />
 
     <!-- Dynamic Title -->
     <title>@yield('title', config('app.name', 'CreativeTech'))</title>
