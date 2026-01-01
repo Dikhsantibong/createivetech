@@ -260,7 +260,7 @@
                             
                                     <div class="mil-about-quote">
                                         <div class="mil-avatar mil-up">
-                                            <img src="{{ asset('ashley/img/faces/team/CEO.png') }}" alt="Founder">
+                                            <img src="{{ asset('ashley/img/logo/hero.png') }}" alt="Founder">
                                         </div>
                                         <h6 class="mil-quote mil-up">
                                             Building <span class="mil-thin">Reliable Technology</span><br>
@@ -276,7 +276,7 @@
                                 <div class="mil-about-photo mil-mb-90">
                                     <div class="mil-lines-place"></div>
                                     <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                        <img src="{{ asset('ashley/img/logo/hero.png') }}" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2">
+                                        <img src="{{ asset('ashley/img/faces/team/CEO.png') }}" alt="Founder" class="mil-scale" data-value-1="1" data-value-2="1.2">
                                     </div>
                                 </div>
 
