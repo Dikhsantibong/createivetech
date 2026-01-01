@@ -210,13 +210,13 @@
                                         <div class="row">
                                             <div class="col-md-6 col-lg-6">
                                                 <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
-                                                    <h4 class="mil-muted mil-up mil-mb-30">Branding and <br>Identity Design</h4>
-                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                                    <h4 class="mil-muted mil-up mil-mb-30">Video <br>Production</h4>
+                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Professional video content for government programs, corporate profiles, campaigns, documentation, and digital media.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
-                                                        <li class="mil-up">UX Audits</li>
-                                                        <li class="mil-up">Design thinking</li>
-                                                        <li class="mil-up">Methodologies</li>
-                                                        <li class="mil-up">Wireframing</li>
+                                                        <li class="mil-up">Corporate Profiles</li>
+                                                        <li class="mil-up">Campaigns</li>
+                                                        <li class="mil-up">Digital Media</li>
+                                                        <li class="mil-up">Documentation</li>
                                                     </ul>
                                                     <div class="mil-link mil-accent mil-arrow-place mil-up">
                                                         <span>Read more</span>
@@ -225,13 +225,13 @@
                                             </div>
                                             <div class="col-md-6 col-lg-6">
                                                 <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor">
-                                                    <h4 class="mil-muted mil-up mil-mb-30">Website Design <br>and Development</h4>
-                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                                    <h4 class="mil-muted mil-up mil-mb-30">Software <br>Development</h4>
+                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Custom web and system development focused on security, scalability, and long-term operational efficiency.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
-                                                        <li class="mil-up">UX Audits</li>
-                                                        <li class="mil-up">Design thinking</li>
-                                                        <li class="mil-up">Methodologies</li>
-                                                        <li class="mil-up">Wireframing</li>
+                                                        <li class="mil-up">Web Development</li>
+                                                        <li class="mil-up">System Integration</li>
+                                                        <li class="mil-up">Security</li>
+                                                        <li class="mil-up">Scalability</li>
                                                     </ul>
                                                     <div class="mil-link mil-accent mil-arrow-place mil-up">
                                                         <span>Read more</span>
@@ -240,13 +240,13 @@
                                             </div>
                                             <div class="col-md-6 col-lg-6">
                                                 <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor mil-offset">
-                                                    <h4 class="mil-muted mil-up mil-mb-30">Advertising and <br>Marketing Campaigns</h4>
-                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                                    <h4 class="mil-muted mil-up mil-mb-30">Motion 3D <br>& Design</h4>
+                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">High-quality motion graphics, 3D visualization, and visual design for education, branding, and digital experiences.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
-                                                        <li class="mil-up">UX Audits</li>
-                                                        <li class="mil-up">Design thinking</li>
-                                                        <li class="mil-up">Methodologies</li>
-                                                        <li class="mil-up">Wireframing</li>
+                                                        <li class="mil-up">Motion Graphics</li>
+                                                        <li class="mil-up">3D Visualization</li>
+                                                        <li class="mil-up">Branding Visuals</li>
+                                                        <li class="mil-up">Digital Experiences</li>
                                                     </ul>
                                                     <div class="mil-link mil-accent mil-arrow-place mil-up">
                                                         <span>Read more</span>
@@ -255,13 +255,13 @@
                                             </div>
                                             <div class="col-md-6 col-lg-6">
                                                 <a href="{{ url('/services') }}" class="mil-service-card-lg mil-more mil-accent-cursor">
-                                                    <h4 class="mil-muted mil-up mil-mb-30">Creative Consulting <br>Concept Development</h4>
-                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                                    <h4 class="mil-muted mil-up mil-mb-30">IT <br>Consulting</h4>
+                                                    <p class="mil-descr mil-light-soft mil-up mil-mb-30">Strategic IT consulting to support digital transformation, system planning, and technology-driven decision making.</p>
                                                     <ul class="mil-service-list mil-light mil-mb-30">
-                                                        <li class="mil-up">UX Audits</li>
-                                                        <li class="mil-up">Design thinking</li>
-                                                        <li class="mil-up">Methodologies</li>
-                                                        <li class="mil-up">Wireframing</li>
+                                                        <li class="mil-up">Digital Transformation</li>
+                                                        <li class="mil-up">System Planning</li>
+                                                        <li class="mil-up">IT Strategy</li>
+                                                        <li class="mil-up">Tech Decision Support</li>
                                                     </ul>
                                                     <div class="mil-link mil-accent mil-arrow-place mil-up">
                                                         <span>Read more</span>
