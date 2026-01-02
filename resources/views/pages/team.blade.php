@@ -319,7 +319,7 @@
                             <div class="col-sm-6 col-md-4 col-lg-3">
 
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/faces/5.jpg" alt="Team member">
+                                    <img src="{{ asset('ashley/img/faces/team/DESAIN.png') }}" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
                                             <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Sufri Adyatno</a></h5>
