@@ -40,108 +40,7 @@
         </div>
         <!-- scrollbar progress end -->
 
-        <!-- menu -->
-        <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="{{ url('/') }}" class="mil-logo">
-                    <img src="{{ asset('ashley/img/logo/logo.png') }}" alt="CreativeTech Logo" style="height:60px;">
-                </a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <div class="col-xl-5">
-                            <nav class="mil-main-menu" id="swupMenu">
-                                <ul>
-                                    <li>
-                                        <a href="{{ url('/') }}">Homepage</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/portfolio') }}">Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/services') }}">Services</a>
-                                    </li>
-                                    <li class="mil-active">
-                                        <a href="{{ url('/team') }}">Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/contact') }}">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-
-                        </div>
-                        <div class="col-xl-7">
-
-                            <div class="mil-menu-right-frame">
-                                <div class="mil-animation-in">
-                                    <div class="mil-animation-frame">
-                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
-                                    </div>
-                                </div>
-                                <div class="mil-menu-right">
-                                    <div class="row">
-                                        <div class="col-lg-8 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
-                                            </ul>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <div class="mil-divider mil-mb-60"></div>
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
+        @include('partials.menu')
 
         <!-- curtain -->
         <div class="mil-curtain"></div>
@@ -346,35 +245,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3">
-
-                                <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/faces/6.jpg" alt="Team member">
-                                    <div class="mil-description">
-                                        <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Rahma Damayanti</a></h5>
-                                            <p class="mil-link mil-light-soft mil-mb-10">Secretary</p>
-                                            <ul class="mil-social-icons mil-center">
-                                                <li>
-                                                    <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="col-sm-6 col-md-4 col-lg-3">
                                 <div class="mil-team-card mil-up mil-mb-30">
                                     <img src="{{ asset('ashley/img/faces/team/HR.png') }}" alt="Team member">
@@ -404,6 +275,8 @@
                                 </div>
 
                             </div>
+
+
                             <div class="col-sm-6 col-md-4 col-lg-3">
                                 <div class="mil-team-card mil-up mil-mb-30">
                                     <img src="{{ asset('ashley/img/faces/team/EDITOR.png') }}" alt="Team member">
@@ -428,18 +301,48 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
+                        </div> <div class="col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="mil-team-card mil-up mil-mb-30">
+                                <img src="{{ asset('ashley/img/faces/team/ITLEADER.png') }}" alt="Team member">
+                                <div class="mil-description">
+                                    <div class="mil-secrc-text">
+                                        <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Jumain Zulkaidah</a></h5>
+                                        <p class="mil-link mil-light-soft mil-mb-10">IT Leader</p>
+                                        <ul class="mil-social-icons mil-center">
+                                            <li>
+                                                <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/USERNAME" target="_blank" class="social-icon">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://x.com/USERNAME" target="_blank" class="social-icon">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                             <div class="col-sm-6 col-md-4 col-lg-3">
 
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="{{ asset('ashley/img/faces/team/ITLEADER.png') }}" alt="Team member">
+                                    <img src="img/faces/6.jpg" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Jumain Zulkaidah</a></h5>
-                                            <p class="mil-link mil-light-soft mil-mb-10">IT Leader</p>
+                                            <h5 class="mil-muted mil-mb-5"><a href="{{ url('/') }}">Rahma Damayanti</a></h5>
+                                            <p class="mil-link mil-light-soft mil-mb-10">Secretary</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>
                                                     <a href="https://www.instagram.com/USERNAME" target="_blank" class="social-icon">
@@ -460,10 +363,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                          
-
                         </div>
                     </div>
                 </section>
